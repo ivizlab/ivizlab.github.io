@@ -1,0 +1,72 @@
+
+- title: "AI Modeling Thought & Language"
+  image: t_aiThought.jpg
+  description: Cognitive modeling of thought, expression and language using advanced AI systems like AI Knowledge Graphs of thought and chained RAG based LLMs.
+  page: /aiThought
+  highlight: 1
+  
+- title: "Semantic Meaning & Analysis"
+  image: t_aiMeaning.jpg
+  description: Cognitive based anaylsis and modeling of deep Semantic Meaning. 
+  page: /aiMeaning
+  highlight: 1
+  
+- title: "Sensing Humans (Bio/Brain/Face/Movement/VR)"
+  image: t_bio.jpg
+  description: Sensing the human for a more human centric approach for analysis and interaction. Bio ( heart, ...), brain, facial, body, hand sensing for interactive and VR.
+  page: /bioBrainVR
+  highlight: 1
+
+- title: "AI Virtual Humans"
+  image: t_covid.jpg
+  description: For real-time/VR AI singularly or multiuser environments  especially where mindfulness and wellness are a goal.
+  page: /virtualHumans
+  highlight: 1
+
+- title: "AI Anonymization"
+  image: t_aianon.jpg
+  description: Researched and created a wholly new AI techniques to anonymize interview subjects and scenes in regular and 360 videos.
+  page: /aiAnon
+  highlight: 1
+
+- title: "AI Cognitive Creativity"
+  image: t_aicreative.jpg
+  description: AI modeling aspects of human creativity in AI using cognitive science as a basis for our work.
+  page: /aiCreativity
+  highlight: 1
+  
+- title: "AI Modeling Animals"
+  image: t_aianimals.jpg
+  description: AI modeling of the behavoir (thinking, movement, expression, ...) of animals and humans.
+  page: /aiAnimals
+  highlight: 1
+
+- title: "XR Avatars; Edu, Coaches, Health"
+  image: t_xrAvatars.jpg
+  description: XR (VR/AR/3D) systems where a user can expressive as talking 3D avatar with gestures/facial expressions. For education, coaches and health. 
+  page: /xrAvatars
+  highlight: 1
+  
+- title: "AI Ethics: Gender"
+  image: t_gender.jpg
+  description: Work and studies in gender issues with AI and Embodied VR. 
+  page: /aiEthicsG
+  highlight: 1
+  
+- title: "AI Ethics: Climate"
+  image: t_ethicsC.jpg
+  description: Studying and reporting on the climate implications of rapidly developing AI usage.
+  page: /aiEthicsC
+  highlight: 1
+
+- title: "AI-based Exploration of Art and Design"
+  image: t_aiarts.jpg
+  description: Cognitive science based AI techniques (creativity, aesthetics, sensing, movement) -- heralding in new forms of art and design exploration.
+  page: /aiArts
+  highlight: 1
+
+- title: "AI and Cognitive Health"
+  image: t_aiHealth.jpg
+  description: Cognitive AI techniques using neuroimaging procedures and machine learning approaches for the prediction of conversion from mild cognitive impairment to Alzheimers disease dementia.
+  page: /aiHealth
+  highlight: 1

@@ -1,0 +1,52 @@
+#- name:
+#  photo: rock.jpg
+#   tag
+#   info:
+
+- name: Vanessa Utz
+  photo: vanessa.jpg  
+  tag: PhD,  <a href="https://www.vanessautz.com/">site</a>
+  info: AI, Cognitive Science, Climate
+
+- name: Meehae Song
+  photo: meehae.jpg
+  tag: PhD,   <a href="https://www.meehaesong.com/">site</a>
+  info: AI, Aesthics, Cognitive Science
+
+- name: Christy Shao 
+  photo: christy.jpg
+  tag: PhD
+  info: AI, Cognitive Science, Design
+
+- name: Johanna Kneifel
+  photo: johanna.jpg
+  tag: PhD
+  info: Cognitive Science
+  
+- name: Nouf Abukhodair
+  photo: nouf.jpg
+  tag: PhD,   <a href="https://new-science-inventions.sciencefather.com/nouf-abukhodair-cognitive-science-best-researcher-award-23247/">site</a>
+  info: AI, Computational Creativity, Aesthetics
+
+- name: Kat Jacobs
+  photo: female.jpg
+  tag: Masters
+  info: AI,  VR
+  
+- name: Rafael Arias
+  photo: rafael.jpg  
+  tag: Masters  <a href="https://www.sfu.ca/gradstudies/life-community/people-research/profiles/fcat/2022/rafael-arias-gonzalez.html">site</a>
+  info: AI, Large Language Models 
+
+- name: Servet Ulas
+  photo: servet.jpg
+  tag: PhD  
+  info: Smart Graphics
+
+- name: Mahdi Davoodikakhki
+  photo: mahdi.jpg
+  tag: PhD
+  info: AI
+
+
+

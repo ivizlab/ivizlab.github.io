@@ -1,0 +1,89 @@
+- name: Mayra Barrera Machuca
+  photo: mayra.jpg
+  tag: Postdoc, now Prof, <a href="https://www.dal.ca/faculty/computerscience/faculty-staff/Mayra-Barrera-Machuca.html">site</a>
+  info: HCI, VR
+  
+- name: Ali Arya
+  photo: ali.jpg
+  tag: Postdoc, now Prof, <a href="https://experts.carleton.ca/ali-arya">site</a> 
+  info: AI, Computer Graphics 
+
+- name: Ulysses Bernardet
+  photo: ulysses.webp
+  tag: Postdoc, now Prof,  <a href="https://research.aston.ac.uk/en/persons/ulysses-bernardet">site</a> 
+  info: AI, Computer Graphics 
+
+- name: Nilay Yalcin
+  photo: nilay.jpg  
+  tag: PhD, Postdoc, now Prof, <a href="https://www.sfu.ca/siat/people/research-faculty/o-nilay-yalcin.html">site</a>
+  info: AI, Cogntive Science 
+  
+- name: Hasti Seifi
+  photo: hasti.jpg
+  tag: PhD, now Prof, <a href="https://hastiseifi.com">site</a> 
+  info: HCI, Computer Graphics
+ 
+- name: Michael Nixon
+  photo: michael.jpg  
+  tag: PhD, now Prof, <a href="https://www.utm.utoronto.ca/iccit/people/michael-nixon">site</a>
+  info: VR, Gaming
+  
+- name: Maryam Ahmadzadeh
+  photo: maryama.jpg
+  tag: PhD
+  info: AI, Health
+  
+- name: Sara Salevati 
+  photo: sara.jpg 
+  tag: PhD, now Amazon lead desinger
+  info: AI, HCI, Design  
+
+- name: Jeremy Turner
+  photo: jeremy.jpg  
+  tag: PhD
+  info: AI, VR
+
+- name: Suk Choi
+  photo: suk.jpg
+  tag: PhD
+  info: AI, Arts, Cognitive Science
+
+- name: Ethan Soutar-Rau
+  photo: ethan.jpg 
+  tag: Masters,  <a href="https://ethansr.net">site</a>
+  info: Interpretability of computational systems and visual analytics
+
+- name: Andrey Goncharov 
+  photo: andrey.jpg
+  tag: Masters,  <a href="https://www.sfu.ca/siat/programs/undergraduate/current-students/awards-and-scholarships/cody-sawatsky-award/Andrey-Goncharov.html">site</a>
+  info: VR 
+
+- name: Maryam Saberi 
+  photo: maryams.jpg 
+  tag: Masters
+  info: Computer Graphics
+
+- name: Mily Mumford
+  photo: mily.jpg  
+  tag: Masters
+  info: AI, VR, Space
+
+- name: Procheta Nag
+  photo: procheta.jpg
+  tag: Masters  
+  info: VR, Computer Graphics
+  
+- name: Nahid Karimaghalou
+  photo: nahid.jpg  
+  tag: Masters
+  info: AI
+
+- name: Mozghan Akhgari
+  photo: mozhgan.jpg 
+  tag: Masters
+  info: AI 
+  
+- name: Masoud Haeri
+  photo: masoud.jpg
+  tag: Masters 
+  info: HCI, Computer Graphics
