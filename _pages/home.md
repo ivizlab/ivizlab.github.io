@@ -9,14 +9,14 @@ permalink: /
 [Simon Fraser University ](https://www.sfu.ca) in the  School  [SIAT](https://www.sfu.ca/siat/). (see [Research](research)). 
 
 
-iVizlab is - “An interdisciplinary human centric AI research lab that strives to make computational systems bend more to the human experience by incorporating biological, cognitive and behavioral knowledge models.” - Dr. Steve DiPaola
+iVizlab is - “An interdisciplinary **human centric AI research lab** that strives to make computational systems bend more to the human experience by **incorporating biological, cognitive and behavioral knowledge models**.” - [Dr. Steve DiPaola](dipaola)
 
 
-**Our Focus** 
-Computer Modelling Human Expression/Cognition/Creativity -- iVizLab is focused on AI based computational models of human characteristics such as expression, emotion, behavior, empathy and creativity; including computer graphics based facial/character systems and AI based cognitive modelling systems.
+**Our Focus:** 
+Computer Modelling Human Expression/Cognition/Creativity -- iVizLab is focused on AI based computationally modelling (and understanding) of human characteristics such as expression, emotion, behavior, empathy and creativity; including computer graphics based facial/character systems and AI based cognitive modelling systems.
 
-**Our Vision** 
-This “Expression Based Interactive or Intelligent Visualization Lab” is grounded in the engineering of AI techniques, computer graphics, data visualization and user interfaces but also strives to encompass work from the areas of cognitive science, neuroscience, and the arts.
+**Our Vision:** 
+This “Expression Based Interactive or Intelligent Visualization (or iViz) Lab” is grounded in the engineering of advanced AI techniques but also computer graphics, data visualization and user interfaces and strives to encompass work from the areas of cognitive science, neuroscience, and the arts.
 
 <br>
 
@@ -64,9 +64,8 @@ This “Expression Based Interactive or Intelligent Visualization Lab” is grou
 </div>
 
 
-  <a href=""><img src="{{ site.url }}{{ site.baseurl }}/images/ref/ivizLogo.jpg" class="img-responsive" width="40%" style="float: left" /></a> 
+  <a href=""><img src="{{ site.url }}{{ site.baseurl }}/images/ref/ivizLogo.jpg" class="img-responsive" width="40%" style="float: left" /></a>
   <a href="https://www.sfu.ca/siat.html"><img src="{{ site.url }}{{ site.baseurl }}/images/ref/siatLogo.jpg" class="img-responsive" width="22%" style="float: left" /></a> 
   <a href="https://www.sfu.ca/"><img src="{{ site.url }}{{ site.baseurl }}/images/ref/sfuLogo.jpg" class="img-responsive" width="19%" style="float: left" /></a>  
 
-<figure class="fourth">
-</figure>
+
