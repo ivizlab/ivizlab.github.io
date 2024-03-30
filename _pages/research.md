@@ -10,13 +10,13 @@ permalink: /research/
 # Research 
 
 
-Our research lab consisting of [~67% women, mostly PhDs]({{ site.url }}{{ site.baseurl }}/team), uses computational modeling of typically cognitive based (human mind) phenomenon such as AI modeling and studying [Meaning, Semantics]({{ site.url }}{{ site.baseurl }}/aiMeaning) 
-and [Thought]({{ site.url }}{{ site.baseurl }}/aiThought). These are typically in the cognitive areas of [Creativity]({{ site.url }}{{ site.baseurl }}/aiCreativity) (in general and in [new creativity systems]({{ site.url }}{{ site.baseurl }}/aiArts), 
-[Expression]({{ site.url }}{{ site.baseurl }}/bioBrainVR) (like facial & body expression, speaking, thinking, empathy and behavior (human and [animal]({{ site.url }}{{ site.baseurl }}/aiAnimals)).
+**Our research lab**, consisting of [~67% women (mostly PhDs)]({{ site.url }}{{ site.baseurl }}/team), uses **computational & AI [modeling]({{ site.url }}{{ site.baseurl }}/aiThought) of typically cognitive-based (human mind) phenomena** such as [Meaning, Semantics]({{ site.url }}{{ site.baseurl }}/aiMeaning) 
+and [Thought]({{ site.url }}{{ site.baseurl }}/aiThought). These include more human centric areas like  [Creativity]({{ site.url }}{{ site.baseurl }}/aiCreativity) (in general and in [new creativity systems]({{ site.url }}{{ site.baseurl }}/aiArts)), 
+[Expression]({{ site.url }}{{ site.baseurl }}/bioBrainVR) (like facial & body expression, speaking, thinking, empathy) as well as cogntive behavior (human and [animal]({{ site.url }}{{ site.baseurl }}/aiAnimals)).
 Much of these systems we code, use [advanced AI]({{ site.url }}{{ site.baseurl }}/aiThought) and at times [advanced sensing systems]({{ site.url }}{{ site.baseurl }}/bioBrainVR) and have applications in
 [Health]({{ site.url }}{{ site.baseurl }}/aiHealth), Education, [AI Coaches]({{ site.url }}{{ site.baseurl }}/xrAvatars), [Anonymization]({{ site.url }}{{ site.baseurl }}/aiAnon), the [emerging and interactive Arts]({{ site.url }}{{ site.baseurl }}/aiArts), 
-talking and expressive [Virtual Humans]({{ site.url }}{{ site.baseurl }}/virtualHumans) and [VR, XR Environments/Avatars]({{ site.url }}{{ site.baseurl }}/xrAvatars) and AI Ethics ( eg [Gender]({{ site.url }}{{ site.baseurl }}/aiEthicsG), [Climate Change]({{ site.url }}{{ site.baseurl }}/aiEthicsC), ...). 
-<br><br> **Browse our interconnected 'cogs meets AI',  human centric areas, with videos and papers:**
+talking and expressive [Virtual Humans]({{ site.url }}{{ site.baseurl }}/virtualHumans), [VR, XR Environments/Avatars]({{ site.url }}{{ site.baseurl }}/xrAvatars) and AI Ethics (e.g. [Gender]({{ site.url }}{{ site.baseurl }}/aiEthicsG) & [Climate Change]({{ site.url }}{{ site.baseurl }}/aiEthicsC)). 
+<br><br> **Browse our interconnected 'cogs meets AI',  human centric areas, with videos and papers:** <br>
 
 {% assign number_printed = 0 %}
 {% for publi in site.data.research %}

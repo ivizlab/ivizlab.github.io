@@ -28,7 +28,7 @@ Climate implications of rapidly developing digital technologies, such as blockch
 <div id="paperSection"></div>
 
 
-**------  PAPERS: AI Ethics: Gender ------**
+**------  PAPERS: AI Ethics: Climate ------**
 
 {% for publi in site.data.publist %}
   {% if publi.research contains 'aiEthics' %}

@@ -11,21 +11,21 @@
   page: /aiMeaning
   highlight: 1
   
-- title: "Sensing Humans (Bio/Brain/Face/Movement/VR)"
+- title: "Sensing Humans"
   image: t_bio.jpg
-  description: Sensing the human for a more human centric approach for analysis and interaction. Bio ( heart, ...), brain, facial, body, hand sensing for interactive and VR.
+  description: Sensing the human for a more human centric approach for analysis & interaction. Bio (i.e. heart rate), brain, facial, body, hand sensing for interactive VR.
   page: /bioBrainVR
   highlight: 1
 
 - title: "AI Virtual Humans"
   image: t_covid.jpg
-  description: For real-time/VR AI singularly or multiuser environments  especially where mindfulness and wellness are a goal.
+  description: For real-time/VR and AI singularly or multiuser environments  especially where mindfulness and wellness are a goal.
   page: /virtualHumans
   highlight: 1
 
 - title: "AI Anonymization"
   image: t_aianon.jpg
-  description: Researched and created a wholly new AI techniques to anonymize interview subjects and scenes in regular and 360 videos.
+  description: Researched and created a wholly new AI technique to anonymize interview subjects and scenes in regular and 360 videos.
   page: /aiAnon
   highlight: 1
 
@@ -37,13 +37,13 @@
   
 - title: "AI Modeling Animals"
   image: t_aianimals.jpg
-  description: AI modeling of the behavoir (thinking, movement, expression, ...) of animals and humans.
+  description: AI modeling of the behavoir (thinking, movement, expression etc.) of animals and humans.
   page: /aiAnimals
   highlight: 1
 
-- title: "XR Avatars; Edu, Coaches, Health"
+- title: "XR Avatars; Education, Coaches, Health"
   image: t_xrAvatars.jpg
-  description: XR (VR/AR/3D) systems where a user can expressive as talking 3D avatar with gestures/facial expressions. For education, coaches and health. 
+  description: XR (VR/AR/3D) systems where a user can be expressive as a talking 3D avatar with gestures/facial expressions. For education, coaches and health. 
   page: /xrAvatars
   highlight: 1
   

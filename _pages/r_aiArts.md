@@ -21,9 +21,15 @@ Reseachers: Steve DiPaola, Suk Choi, Meehae Song, Nouf Abukhodair, Vanessa Utz, 
 
 **The Research:**
 Computational and AI techniques, combined with our research in cognitive science based work in creativity, aesthetics, sensing, movement -- heralds in new forms of art and design, including new exploration / ideation  / creation / collaboration techniques. 
+<br> <br> <br>
 
-Using our systems - users can journey through art and design ideation space.
+**See samples of our work in the figures below:**
+<br> <br>
+
+
+Using our systems - users can journey through art and design ideation space:
 <img src="{{ site.url }}{{ site.baseurl }}/images/res/artmet1.jpg" class="img-responsive" width="50%"/>
+
 <img src="{{ site.url }}{{ site.baseurl }}/images/res/artmet2.jpg" class="img-responsive" width="50%"/>
 <img src="{{ site.url }}{{ site.baseurl }}/images/res/artmet3.jpg" class="img-responsive" width="50%"/>
 
