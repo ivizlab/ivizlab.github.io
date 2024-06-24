@@ -14,7 +14,7 @@ permalink: /aiAnon/
  ## [AI Cognitive Creativity]({{ site.url }}{{ site.baseurl }}/aiCreativity) ## [AI Ethics: Gender]({{ site.url }}{{ site.baseurl }}/aiEthicsG) ## [AI Ethics: Climate]({{ site.url }}{{ site.baseurl }}/aiEthicsC)
 <br>
 
-Reseachers: Steve DiPaola, Vanessa Utz, Nilay Ozge Yalcin 
+Researchers: Steve DiPaola, Vanessa Utz, Nilay Ozge Yalcin 
 
 
 **The Research:**

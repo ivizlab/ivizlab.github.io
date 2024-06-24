@@ -16,7 +16,7 @@ permalink: /aiArts/
  ## [AI Cognitive Creativity]({{ site.url }}{{ site.baseurl }}/aiCreativity) ## [AI Ethics: Gender]({{ site.url }}{{ site.baseurl }}/aiEthicsG) ## [AI Ethics: Climate]({{ site.url }}{{ site.baseurl }}/aiEthicsC)
 <br>
 
-Reseachers: Steve DiPaola, Suk Choi, Meehae Song, Nouf Abukhodair, Vanessa Utz, Shannon Cuykendall
+Researchers: Steve DiPaola, Suk Choi, Meehae Song, Nouf Abukhodair, Vanessa Utz, Shannon Cuykendall
  
 
 **The Research:**

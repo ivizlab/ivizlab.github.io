@@ -12,7 +12,7 @@ permalink: /xrAvatars/
  ## [AI Modeling Thought & Language]({{ site.url }}{{ site.baseurl }}/aiThought) ## [AI Cognitive Creativity)]({{ site.url }}{{ site.baseurl }}/aiCreativity)<br>
  ## [AI Affective Virtual Human]({{ site.url }}{{ site.baseurl }}/virtualHumans)  ## [Sensing Humans (Bio/Brain/Face/Movement/VR)]({{ site.url }}{{ site.baseurl }}/bioBrainVR)<br>
 
-Reseachers: Steve DiPaola, Mahdi Davoodikakhki, Andrey Goncharov, Nilay Ozge Yalcin 
+Researchers: Steve DiPaola, Mahdi Davoodikakhki, Andrey Goncharov, Nilay Ozge Yalcin 
 
 
 **The Research**

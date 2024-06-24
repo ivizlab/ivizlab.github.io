@@ -13,7 +13,7 @@ permalink: /aiCreativity/
  ## [AI-based Exploration of Art and Design]({{ site.url }}{{ site.baseurl }}/aiArts) ## [AI Anonymization]({{ site.url }}{{ site.baseurl }}/aiAnon) ## [Sensing Humans (Bio/Brain/Face/Movement/VR)]({{ site.url }}{{ site.baseurl }}/bioBrainVR)<br>
  ## [Semantic Meaning & Analysis]({{ site.url }}{{ site.baseurl }}/aiMeaning) ## [AI Modeling Thought & Language]({{ site.url }}{{ site.baseurl }}/aiThought) <br>
 
-Reseachers: Steve DiPaola, Vanessa Utz, Suk Choi, Nilay Ozge Yalcin, Nouf Abukhodair, Meehae Song  
+Researchers: Steve DiPaola, Vanessa Utz, Suk Choi, Nilay Ozge Yalcin, Nouf Abukhodair, Meehae Song  
 
 **The Research:**
 The goal of our research team is to model aspects of human creativity in AI using cognitive science as a basis for our work. Specially we are using Deep Neural Networks (and evolutionary systems) in the form of Deep Learning, CNNs, RNNs, GANs, Diffusion, LLMs and other modern techniques to attempt to replicate aspects of human expression and creativity. We are known for modelling expression semantics and generation of visual art (stills, videos, VR) but have extended our work into expressive forms of linguistic (word based) narrative.

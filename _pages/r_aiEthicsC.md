@@ -12,7 +12,7 @@ permalink: /aiEthicsC/
 <strong> [See Related Papers](#paperSection) and Related Projects:</strong> <br>
  ## [AI Ethics: Gender]({{ site.url }}{{ site.baseurl }}/aiEthicsG)  ## [AI Anonymization]({{ site.url }}{{ site.baseurl }}/aiAnon)
  
-Reseachers: Vanessa Utz, Steve DiPaola
+Researchers: Vanessa Utz, Steve DiPaola
 
 
 **The Research:**

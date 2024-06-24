@@ -6,14 +6,14 @@ sitemap: false
 permalink: /aiThought/
 ---
 
-# AI Modeling Thought & Langauge
+# AI Modeling Thought & Language
 
 
 <strong> [See Related Papers](#paperSection) and Related Projects:</strong> <br>
  ## [Semantic Meaning & Analysis]({{ site.url }}{{ site.baseurl }}/aiMeaning) ## [AI-based Exploration of Art and Design]({{ site.url }}{{ site.baseurl }}/aiArts) ## [AI Cognitive Creativity]({{ site.url }}{{ site.baseurl }}/aiCreativity)<br>
  ## [Sensing Humans (Bio/Brain/Face/Movement/VR)]({{ site.url }}{{ site.baseurl }}/bioBrainVR)  <br>
 
-Reseachers: Steve DiPaola, Rafael Arias Gonzalez, Nilay Yalcin, Maryam Ahmadzadeh
+Researchers: Steve DiPaola, Rafael Arias Gonzalez, Nilay Yalcin, Maryam Ahmadzadeh
 
 
 **The Research:**

@@ -18,7 +18,7 @@ Reseachers: Steve DiPaola, Meehae Song
 
 **About:**
 Our lab has extensive experience in using different sensing technologies to better understand and incorporate human intent and interaction.
-Including eye tracking, facial emotion recognition (DiPaola et al 2013); gesture, body, &hand tracking; bio sensing -  heart rate and EDA (Song & DiPaola, 2015);  brain waves ( BCI),  both for huamn understanding and for more human centered interaction for affect generative systems as it can be used to understand the reception to the generated graphics (still, video, VR).
+Including eye tracking, facial emotion recognition (DiPaola et al 2013); gesture, body, &hand tracking; bio sensing -  heart rate and EDA (Song & DiPaola, 2015);  brain waves ( BCI),  both for human understanding and for more human centered interaction for affect generative systems as it can be used to understand the reception to the generated graphics (still, video, VR).
 
 **The Research:**
 Emotional facial tracking using camera and AI software. Motion, gesture and body tracking using overhead cameras and MS Kinect. Hand tracking via our own data gloves and Leap Controller. Eye tracking via our Pupil eye tracker. Bio sensing ( heart rate and EDA) via our Empatica E4 watch. Brain wave via Muse and other systems.

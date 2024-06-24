@@ -12,7 +12,7 @@ permalink: /aiHealth/
  ## [AI Modeling Thought & Language]({{ site.url }}{{ site.baseurl }}/aiThought) ## [AI Cognitive Creativity]({{ site.url }}{{ site.baseurl }}/aiCreativity)<br>
  ## [XR Avatars; Edu, Coaches, Health]({{ site.url }}{{ site.baseurl }}/xrAvatars)  ## [Sensing Humans (Bio/Brain/Face/Movement/VR)]({{ site.url }}{{ site.baseurl }}/bioBrainVR)<br>
 
-Reseachers: Maryam Ahmadzadeh, Steve DiPaola, Sylvain Moreno
+Researchers: Maryam Ahmadzadeh, Steve DiPaola, Sylvain Moreno
 
 
 **The Research**
@@ -21,7 +21,7 @@ We used Deep Learning techniques on several systematic reviews with the most rec
 We systematically searched PubMed, SCOPUS, and Web of Science databases following Preferred Reporting Items for Systematic Reviews and Meta-Analyses (PRISMA) systematic review guidelines.
 
 The multimodality framework and deep learning techniques showed potential for predicting the conversion of MCI to AD dementia.
-Findings of these systematic reviews identifed that the possibility of using neuroimaging data processed by advanced learning algorithms is promising for the prediction of AD progression. 
+Findings of these systematic reviews identified that the possibility of using neuroimaging data processed by advanced learning algorithms is promising for the prediction of AD progression. 
 
 <br>
 <img src="{{ site.url }}{{ site.baseurl }}/images/res/aiHealth.jpg" class="img-responsive" width="80%"/>
