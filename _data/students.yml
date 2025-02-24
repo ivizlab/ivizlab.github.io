@@ -33,15 +33,20 @@
   tag: Masters
   info: AI,  VR
   
-- name: Rafael Arias
-  photo: rafael.jpg  
-  tag: Masters,  <a href="https://www.sfu.ca/gradstudies/life-community/people-research/profiles/fcat/2022/rafael-arias-gonzalez.html">site</a>
-  info: AI, Large Language Models 
+- name: Shumeng Dai
+  photo: shumeng.jpg  
+  tag: PhD,  <a href="https://hennessy.iat.sfu.ca/mcl/staff/shumeng-dai/">site</a>
+  info: AI, Arts, Aesthetics 
 
 - name: Servet Ulas
   photo: servet.jpg
   tag: PhD  
   info: Smart Graphics
+  
+- name: Charlotte Hou
+  photo: charlotte.jpg  
+  tag: Masters,  <a href="https://www.linkedin.com/in/charlottehou/">site</a>
+  info: AI, VR, Negotiation  
 
 - name: Mahdi Davoodikakhki
   photo: mahdi.jpg
