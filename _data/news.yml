@@ -1,3 +1,18 @@
+- date: Jan 28 '25
+  headline: CBC Feature On iVizLab - (75% Women)
+  info: CBC feature on our Lab for Intl Women's Day. See [CBC News Link]( https://www.cbc.ca/news/canada/british-columbia/artificial-intelligence-lab-women-stem-1.7475723)
+  image: labWomen.jpg
+
+- date: Aug '25
+  headline: SFU prof debuts 3D AI teaching coach
+  info: 1 of 30 news stories on KIA; SFU prof debuts 3D artificial intelligence teaching coach See [CBC News Link]( https://www.cbc.ca/news/canada/british-columbia/sfu-prof-s-ai-sidekick-1.7620141)
+  image: Kia1.jpg
+
+- date: Jan 28 '25
+  headline: DiPaola on CBC National News; Open Source AI 
+  info: DiPaola interview on moving away from Corporate AI to Open Community tools. See [CBC News Link]( https://www.cbc.ca/player/play/video/9.6626348)
+  image: cbc25.jpg
+  
 - date: Mar 10 '24
   headline: Several lab PhDs and Masters graduated
   info: 4 of our grads - PhDs & Masters in AI and VR graduated! Advanced LLM with cognitive episodic memory, exploring  deep aesthetics in AI and the arts, XR mocap avatars, ...  

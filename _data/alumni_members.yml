@@ -1,7 +1,12 @@
-- name: Rafael Arias
-  photo: rafael.jpg  
-  tag: Masters,  <a href="https://www.sfu.ca/gradstudies/life-community/people-research/profiles/fcat/2022/rafael-arias-gonzalez.html">site</a>
-  info: AI, Large Language Models 
+- name: Nouf Abukhodair
+  photo: nouf.jpg
+  tag: PhD,   <a href="https://new-science-inventions.sciencefather.com/nouf-abukhodair-cognitive-science-best-researcher-award-23247/">site</a>
+  info: AI, Computational Creativity, Aesthetics
+
+- name: Kat Jacobs
+  photo: female.jpg
+  tag: Masters
+  info: AI,  VR
   
 - name: Mayra Barrera Machuca
   photo: mayra.jpg
@@ -46,7 +51,7 @@
 - name: Jeremy Turner
   photo: jeremy.jpg  
   tag: PhD
-  info: AI, VR
+  info: AI, VV
 
 - name: Suk Choi
   photo: suk.jpg

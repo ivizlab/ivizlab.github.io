@@ -76,20 +76,8 @@ permalink: /publications/
         </span>
         
         <br> 
-        <a href="{{ publi.url }}" target="_blank" style="font-weight: bold;">{{ publi.display }}</a> 
-        {% comment %}
-        <a href="https://www.semanticscholar.org/search?q={{ publi.title | url_encode }}+{{ publi.authors | split: ',' | first | url_encode }}" 
-	      target="_blank" 
-	      style="font-weight: bold; color: #007bff;">
-	      .. Get Paper .. 
-	     </a>
-	      {% endcomment %}
-	      <a href="https://scholar.google.com/scholar?q=%22{{ publi.title | url_encode }}%22" target="_blank">
-		   ..     Search Google Scholar
-         </a>     
+        <a href="{{ publi.url }}" target="_blank" style="font-weight: bold;">{{ publi.display }}</a>
         <hr style="border: 0; border-top: 1px solid #eee; margin-top: 20px;">
-
-
       </div>
     {% endfor %}
   </div>

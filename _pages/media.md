@@ -5,7 +5,7 @@ excerpt: "iVizLab -- Lab Media"
 permalink: /media/
 ---
 
-# Media and Events 
+# Media / About
 
 <img src="{{ site.url }}{{ site.baseurl }}/images/people/labPano.jpg" class="img-responsive" width="95%" style="float: left" />
 
@@ -14,8 +14,16 @@ permalink: /media/
 
 #### iVizLab Videos:  [iVizLab Youtube](https://www.youtube.com/channel/UCMCLjA-uXGBajlp6Dj6Mj8A)
 <br>
-#### Recent Talks (videos) about the Lab's research: 
+### Recent Media / Talks  about the Lab's research: 
 <br>
+
+#### The 2025 CBC News feature on our <a href="https://www.cbc.ca/news/canada/british-columbia/artificial-intelligence-lab-women-stem-1.7475723" target="_blank"> Lab </a>
+
+<a href="https://www.cbc.ca/news/canada/british-columbia/artificial-intelligence-lab-women-stem-1.7475723" target="_blank">
+  <img src="{{ site.url }}{{ site.baseurl }}/images/people/labwomen.jpg" class="img-responsive" width="50%" alt="iVizLab News on CBC" />
+</a>
+<br>
+
 -- RSC "Massey Lecture" - **Creativity in the Age of Artificial Intelligence** 2023
 -	Invited talk, DiPaola together with VP, AI research at Meta,
 **[Full Talk](https://youtu.be/u2Wu2hR0vo4)** ( french/english) - **[DiPaola start](https://youtu.be/u2Wu2hR0vo4?t=1266)** in english 

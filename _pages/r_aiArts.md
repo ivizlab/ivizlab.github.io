@@ -27,6 +27,22 @@ Computational and AI techniques, combined with our research in cognitive science
 <br> <br>
 
 
+**See samples of the work in the videos below:**
+<br>
+<iframe width="450" height="230" src="https://www.youtube.com/embed/0oftfWVBang?rel=0" frameborder="0" allowfullscreen></iframe>
+**Video 1:** Tour With the Advanced Stream DIffusion based artist tool we built ( ivizDiff ) - we can use source images - and even use several and blend them. And prompts ( again many and wieght them) - and either live video or looped video files which we can control in realtime interactiveluy  with all our advanced paramaters to make a realtime video with full interactive control including as you see here mapping live music,  breath work, mic levels, hand gestures, and game controllers. We can also have several personally trained models LORAs on a users work or ideas. Here I am using my own original art work as image  inputs and a lora trained on my style ( my art work) - all with me controlling my face video. See other demos of inputs from a living tree, or physically based manipulation for realtime architecture ideation. 
+<br> <br>  
+<iframe width="450" height="230" src="https://www.youtube.com/embed/41qYi01eTgQ??rel=0" frameborder="0" allowfullscreen></iframe>   
+**Video 2:** Demo of live AI architecture ideation using physical controllers: boxes.
+<br> <br>
+<iframe width="450" height="230" src="https://www.youtube.com/embed/CJT2ruwi5Yk?rel=0" frameborder="0" allowfullscreen></iframe>
+**Video 3:** We used our orginal tree painting as source combined with the living signals coming off our plant and our  creative manipulation to make this music/visuals happen in real time. So  original art mixed with trees or plants/ garden and  dance (mouse controls) can make interactive moving art. 
+<br> <br>
+<iframe width="450" height="230" src="https://www.youtube.com/embed/tbHVtA7-OQs?srel=0" frameborder="0" allowfullscreen></iframe>  
+**Video 4:** Our work commisioned at ACM SIGGRAPH
+<br> <br>
+
+
 Using our systems - users can journey through art and design ideation space:
 <img src="{{ site.url }}{{ site.baseurl }}/images/res/artmet1.jpg" class="img-responsive" width="50%"/>
 

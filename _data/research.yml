@@ -4,6 +4,12 @@
   description: Cognitive modeling of thought, expression and language using advanced AI systems like AI Knowledge Graphs of thought and chained RAG based LLMs.
   page: /aiThought
   highlight: 1
+
+- title: "AI-based Exploration of Art and Design"
+  image: t_aiarts.jpg
+  description: Cognitive science based AI techniques (creativity, aesthetics, sensing, movement) -- heralding in new forms of art and design exploration.
+  page: /aiArts
+  highlight: 1
   
 - title: "Semantic Meaning & Analysis"
   image: t_aiMeaning.jpg
@@ -57,12 +63,6 @@
   image: t_ethicsC.jpg
   description: Studying and reporting on the climate implications of rapidly developing AI usage.
   page: /aiEthicsC
-  highlight: 1
-
-- title: "AI-based Exploration of Art and Design"
-  image: t_aiarts.jpg
-  description: Cognitive science based AI techniques (creativity, aesthetics, sensing, movement) -- heralding in new forms of art and design exploration.
-  page: /aiArts
   highlight: 1
 
 - title: "AI and Cognitive Health"

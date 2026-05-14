@@ -22,6 +22,16 @@ Our AI work in cognitive modeling of thought, expression and language using adva
 <br>
 
 
+**See samples of the work in the videos below:**
+<br>
+<iframe width="450" height="230" src="https://www.youtube.com/embed/BZ4QcQSoatk?rel=0" frameborder="0" allowfullscreen></iframe>
+**Video 1:** Our advcaned talking AI chracter  work on creating thinking Virtual Medical Patients for Medical School Education.
+<br> <br>  
+<iframe width="450" height="230" src="https://www.youtube.com/embed/3H-CUDzBTvo?rel=0" frameborder="0" allowfullscreen></iframe>   
+**Video 2:** Embodied Conversational AI for Women's Negotiation Training: A Regulatory-Focus-Informed Simulation and Evaluation, Qianying (Charlotte) Hou,  ( Supervisor Steve DiPaola) 
+<br> <br>
+
+
 **See figures and videos of our work below:**
 <br>
 

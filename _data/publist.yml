@@ -1,4 +1,64 @@
 - new: 1
+  type: Journal
+  number: 1
+  authors: Abukhodair N, DiPaola S
+  title: "  Creating an Emotionally Aware Portrait System Prototype using Aesthetic Emotion Evaluations of AI Art Portraits"
+  journal:  " Journal of Perceptual Imaging(2025)" 
+  description: 8 pages
+  year: 2025
+  research: aiThought
+  display:  " Journal of Perceptual Imaging (2025)" 
+  url: https://www.google.com/search?q='  Creating an Emotionally Aware Portrait System Prototype using Aesthetic Emotion Evaluations of AI Art Portraits' ' Journal of Perceptual Imaging 2025)'
+
+- new: 1
+  type: Conference
+  number: 1
+  authors: Lo P, Veldhuis A, Antle A, DiPaola S.
+  title: " Noel: A Chatbot Persona to Support Children Designing for Others, ACM Conf on Human Factors in Computing Systems"
+  journal:  " ACM CHI Conference on Human Factors in Computing Systems (CHI) (2025)" 
+  description: 25 pages
+  year: 2025
+  research: aiThought
+  display:  " ACM CHI Conference on Human Factors in Computing Systems (CHI) (2025)" 
+  url: https://www.google.com/search?q=' Exploring Augmentation and Cognitive Strategies for Synthetic Personae' ' ACM CHI Conference on Human Factors in Computing Systems (CHI)'
+
+- new: 1
+  type: Conference
+  number: 1
+  authors:  Dai S , Hennessy K, DiPaola S.
+  title:  " Applying GenAI to the Conservation and Reconstruction of Chinese Paintings Challenges and Insights" 
+  journal:  " Proceedings of Electronic Visualisation and the Arts, British Computer Society (2025)" 
+  description:  23 pages
+  year: 2025
+  research: aiMeaning
+  display:  " Proceedings of Electronic Visualisation and the Arts, British Computer Society (2025)" 
+  url: https://www.google.com/search?q=' Applying GenAI to the Conservation and Reconstruction of Chinese Paintings Challenges and Insights' ' Proceedings of Electronic Visualisation and the Arts, British Computer Society'
+
+- new: 1
+  type: Conference
+  number: 1
+  authors: Mah S,  ... and DiPaola S
+  title: " Artist-Centric XR/AI Sandbox for Co-Creation and Performance"
+  journal:  " AProceedings of SIGGRAPH Frontiers '25: Computer Graphics and Interactive Techniques  Article (2025)" 
+  description: Article No. 4
+  year: 2025
+  research: aiThought
+  display:  " ACM CHI Conference on Human Factors in Computing Systems (CHI) (2024)" 
+  url: https://www.google.com/search?q=' Artist-Centric XR/AI Sandbox for Co-Creation and Performance' ' SIGGRAPH'
+
+- new: 1
+  type: Conference
+  number: 1
+  authors: DiPaola S
+  title: " Rethinking Artificial Intelligence creativity and ideation systems"
+  journal:  " NeurIPS 2024, NeurIPS  Workshop on Creativity & Generative AI (2024)" 
+  description: 8 pages
+  year: 2024
+  research: aiThought
+  display:  " NeurIPS 2024, NeurIPS  Workshop on Creativity & Generative AI (2024)" 
+  url: https://www.google.com/search?q=' Rethinking Artificial Intelligence creativity and ideation systems' ' NeurIPS 2024)'
+
+- new: 1
   type: Conference
   number: 1
   authors: Gonzalez RA; DiPaola S
