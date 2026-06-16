@@ -1,0 +1,613 @@
+---
+title: "iVizLab - Rethinking AI"
+layout: textlay
+excerpt: "iVizLab -- Rethinking Artificial Intelligence"
+sitemap: false
+permalink: /aiRethink/
+---
+
+
+
+<h1>AI ReThink</h1>
+
+<p><strong><a href="#paperSection">See Related Papers</a> and Related Projects:</strong><br>
+<a href="{{ site.url }}{{ site.baseurl }}/aiMeaning">Semantic Meaning &amp; Analysis</a> &nbsp;·&nbsp;
+<a href="{{ site.url }}{{ site.baseurl }}/aiThought">AI Modeling Thought &amp; Language</a> &nbsp;·&nbsp;
+<a href="{{ site.url }}{{ site.baseurl }}/virtualHumans">AI Affective Virtual Human</a> &nbsp;·&nbsp;
+<a href="{{ site.url }}{{ site.baseurl }}/xrAvatars">XR Avatars; Edu, Coaches, Health</a> &nbsp;·&nbsp;
+<a href="{{ site.url }}{{ site.baseurl }}/bioBrainVR">Sensing Humans (Bio/Brain/Face/Movement/VR)</a>
+</p>
+
+<p><strong>Researchers:</strong> Steve DiPaola, Vanessa Utz, Rafael Arias Gonzalez </p>
+
+<style>
+  /* ── Reset & base ─────────────────────────────────────────── */
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --teal:      #027D7A;
+    --teal-mid:  #4A7C7A;
+    --teal-lt:   #E8F4F3;
+    --teal-rule: #B2D8D6;
+    --rust:      #C05A3A;
+    --rust-lt:   #F5EDE9;
+    --dark:      #1A2631;
+    --mid:       #3D5263;
+    --sand:      #F5F1EC;
+    --white:     #ffffff;
+    --body-font: 'Georgia', serif;
+    --ui-font:   'Arial', 'Helvetica Neue', sans-serif;
+    --max:       860px;
+  }
+
+  html { font-size: 17px; scroll-behavior: smooth; }
+
+  body {
+    font-family: var(--body-font);
+    color: var(--dark);
+    background: var(--white);
+    line-height: 1.75;
+  }
+
+  /* ── Typography ───────────────────────────────────────────── */
+  h1, h2, h3, nav, .label, .stat-label, footer {
+    font-family: var(--ui-font);
+  }
+
+  p { margin-bottom: 1.15em; }
+  p:last-child { margin-bottom: 0; }
+
+  strong { font-weight: 700; }
+
+  /* ── Layout helpers ───────────────────────────────────────── */
+  .container {
+    max-width: var(--max);
+    margin: 0 auto;
+    padding: 0 2rem;
+  }
+
+  section { padding: 4rem 0; }
+  section + section { border-top: 1px solid var(--teal-rule); }
+
+  /* ── Nav ──────────────────────────────────────────────────── */
+  nav {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: var(--dark);
+    padding: 0.75rem 2rem;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    font-size: 0.82rem;
+    letter-spacing: 0.03em;
+  }
+
+  .nav-brand {
+    color: var(--teal-rule);
+    font-weight: 700;
+    text-decoration: none;
+    margin-right: auto;
+    font-size: 0.88rem;
+  }
+
+  nav a {
+    color: #8AADAB;
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+
+  nav a:hover { color: var(--white); }
+
+  /* ── Hero ─────────────────────────────────────────────────── */
+  .hero {
+    background: var(--teal);
+    color: var(--white);
+    padding: 5rem 0 4rem;
+    border-bottom: none;
+  }
+
+  .hero-eyebrow {
+    font-family: var(--ui-font);
+    font-size: 0.8rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--teal-rule);
+    margin-bottom: 1rem;
+  }
+
+  .hero h1 {
+    font-size: clamp(2rem, 5vw, 3rem);
+    font-weight: 800;
+    line-height: 1.15;
+    margin-bottom: 0.6rem;
+    color: var(--white);
+  }
+
+  .hero-sub {
+    font-family: var(--ui-font);
+    font-size: 1.15rem;
+    color: #D4EFED;
+    font-style: italic;
+    margin-bottom: 2rem;
+  }
+
+  .hero-meta {
+    font-family: var(--ui-font);
+    font-size: 0.85rem;
+    color: #A8D8D5;
+  }
+
+  /* ── Stat row ─────────────────────────────────────────────── */
+  .stats {
+    display: flex;
+    gap: 1px;
+    background: var(--teal-rule);
+    border-top: 1px solid var(--teal-rule);
+    border-bottom: 1px solid var(--teal-rule);
+  }
+
+  .stat {
+    flex: 1;
+    background: var(--teal-lt);
+    padding: 1.6rem 1rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .stat-num {
+    font-family: var(--ui-font);
+    font-size: 2rem;
+    font-weight: 800;
+    color: var(--teal);
+    line-height: 1;
+    margin-bottom: 0.4rem;
+  }
+
+  .stat-label {
+    font-size: 0.78rem;
+    color: var(--mid);
+    line-height: 1.35;
+  }
+
+  .stat-label em {
+    display: block;
+    font-style: normal;
+    font-size: 0.72rem;
+    color: var(--teal-mid);
+    margin-top: 0.2rem;
+  }
+
+  /* ── Section headings ─────────────────────────────────────── */
+  .section-label {
+    font-family: var(--ui-font);
+    font-size: 0.75rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--teal-mid);
+    margin-bottom: 0.5rem;
+  }
+
+  h2 {
+    font-size: 1.65rem;
+    font-weight: 700;
+    color: var(--dark);
+    margin-bottom: 1.4rem;
+    line-height: 1.2;
+  }
+
+  h3 {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--dark);
+    margin-bottom: 0.3rem;
+    margin-top: 1.4rem;
+  }
+
+  /* ── Pull quote ───────────────────────────────────────────── */
+  .pull-quote {
+    border-left: 4px solid var(--teal);
+    padding: 0.8rem 0 0.8rem 1.5rem;
+    margin: 2rem 0;
+    font-style: italic;
+    font-size: 1.1rem;
+    color: var(--teal-mid);
+    line-height: 1.6;
+  }
+
+  /* ── Image placeholders ───────────────────────────────────── */
+  .img-placeholder {
+    width: 100%;
+    background: var(--teal-lt);
+    border: 1.5px dashed var(--teal-rule);
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--teal-mid);
+    font-family: var(--ui-font);
+    font-size: 0.82rem;
+    font-style: italic;
+    letter-spacing: 0.02em;
+    margin: 2rem 0;
+  }
+
+  .img-placeholder.tall   { height: 320px; }
+  .img-placeholder.medium { height: 240px; }
+  .img-placeholder.short  { height: 180px; }
+
+  /* ── Project cards ────────────────────────────────────────── */
+  .project-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+
+  .project-card {
+    border-radius: 8px;
+    padding: 2rem;
+  }
+
+  .project-card.ai4all   { background: var(--teal-lt); }
+  .project-card.rethinkai { background: var(--rust-lt); }
+
+  .card-label {
+    font-family: var(--ui-font);
+    font-size: 0.72rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    margin-bottom: 0.3rem;
+  }
+
+  .ai4all   .card-label   { color: var(--teal); }
+  .rethinkai .card-label  { color: var(--rust); }
+
+  .card-title {
+    font-family: var(--ui-font);
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: var(--dark);
+    margin-bottom: 0.25rem;
+  }
+
+  .card-sub {
+    font-family: var(--ui-font);
+    font-size: 0.85rem;
+    font-style: italic;
+    margin-bottom: 1rem;
+  }
+
+  .ai4all   .card-sub { color: var(--teal-mid); }
+  .rethinkai .card-sub { color: var(--rust); }
+
+  .card-body { font-size: 0.92rem; line-height: 1.7; }
+
+  .card-status {
+    font-family: var(--ui-font);
+    font-size: 0.82rem;
+    font-weight: 700;
+    margin-top: 1rem;
+  }
+
+  .ai4all   .card-status { color: var(--teal); }
+  .rethinkai .card-status { color: var(--rust); }
+
+  .card-target {
+    font-family: var(--ui-font);
+    font-size: 0.8rem;
+    font-style: italic;
+    color: var(--mid);
+    margin-top: 0.3rem;
+  }
+
+  /* ── Feature list (bold intro + body) ────────────────────── */
+  .feature-list { list-style: none; padding: 0; }
+  .feature-list li {
+    padding: 0.6rem 0 0.6rem 1.2rem;
+    position: relative;
+    border-bottom: 1px solid var(--teal-rule);
+    font-size: 0.95rem;
+    line-height: 1.65;
+  }
+  .feature-list li:last-child { border-bottom: none; }
+  .feature-list li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 1.15rem;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--teal);
+  }
+
+  /* ── Get involved bullets ─────────────────────────────────── */
+  .involve-list { list-style: none; padding: 0; }
+  .involve-list li {
+    padding: 0.8rem 0 0.8rem 1.6rem;
+    position: relative;
+    border-bottom: 1px solid var(--teal-rule);
+    font-size: 0.95rem;
+    line-height: 1.65;
+  }
+  .involve-list li:last-child { border-bottom: none; }
+  .involve-list li::before {
+    content: '\25B8';
+    position: absolute;
+    left: 0;
+    top: 0.85rem;
+    color: var(--teal);
+    font-size: 0.9rem;
+  }
+
+  /* ── CTA block ────────────────────────────────────────────── */
+  .cta-block {
+    background: var(--dark);
+    color: var(--white);
+    padding: 3.5rem 0;
+    text-align: center;
+    border-top: none;
+  }
+
+  .cta-block h2 { color: var(--white); margin-bottom: 0.5rem; }
+
+  .cta-quote {
+    font-style: italic;
+    color: #A8D8D5;
+    font-size: 1.05rem;
+    max-width: 600px;
+    margin: 0 auto 2rem;
+    line-height: 1.6;
+  }
+
+  .cta-btn {
+    display: inline-block;
+    background: var(--teal);
+    color: var(--white);
+    font-family: var(--ui-font);
+    font-size: 0.9rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    padding: 0.85rem 2rem;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background 0.2s;
+    margin: 0.4rem;
+  }
+
+  .cta-btn:hover { background: #039490; }
+  .cta-btn.outline {
+    background: transparent;
+    border: 2px solid var(--teal-rule);
+    color: var(--teal-rule);
+  }
+  .cta-btn.outline:hover { background: rgba(2,125,122,0.2); }
+
+  /* ── Footer ───────────────────────────────────────────────── */
+  footer {
+    background: #111C24;
+    color: #6AADAB;
+    font-size: 0.82rem;
+    padding: 1.5rem 2rem;
+    text-align: center;
+    line-height: 2;
+  }
+
+  footer a { color: #8AADAB; text-decoration: none; }
+  footer a:hover { color: var(--white); }
+
+  /* ── Responsive ───────────────────────────────────────────── */
+  @media (max-width: 640px) {
+    .project-grid { grid-template-columns: 1fr; }
+    .stats { flex-direction: column; gap: 1px; }
+    nav a:not(.nav-brand) { display: none; }
+  }
+</style>
+<!-- ── HERO ─────────────────────────────────────────────────── -->
+<div class="hero">
+  <div class="container">
+    <p class="hero-eyebrow">Steve DiPaola, Dir.· iVizLab · Simon Fraser University</p>
+    <h1>Rethinking Artificial Intelligence</h1>
+    <p class="hero-sub">A Community Answer to Corporate AI</p>
+    <p class="hero-meta">
+      SSHRC Insight Grant 2026–2030 &nbsp;·&nbsp; Large 5 Year Combined Funding &nbsp;·&nbsp; Open Source
+    </p>
+  </div>
+</div>
+
+<!-- ── STATS ─────────────────────────────────────────────────── -->
+<div class="stats">
+  <div class="stat">
+    <div class="stat-num">70%</div>
+    <div class="stat-label">less energy than GPT-5 per query<em>visibility built in — live energy dashboard</em></div>
+  </div>
+  <div class="stat">
+    <div class="stat-num">100%</div>
+    <div class="stat-label">private — your data never leaves your machine<em>no cloud, no tracking, no exceptions</em></div>
+  </div>
+  <div class="stat">
+    <div class="stat-num">$0</div>
+    <div class="stat-label">no subscription, no account, no cloud<em>free forever — unlimited use on your own hardware</em></div>
+  </div>
+  <div class="stat">
+    <div class="stat-num">0</div>
+    <div class="stat-label">corporate gatekeepers<em>community-built, not corporate-controlled</em></div>
+  </div>
+</div>
+
+<!-- ── INTRO ─────────────────────────────────────────────────── -->
+<section id="intro">
+  <div class="container">
+    <p class="section-label">The Problem</p>
+    <h2>What is wrong with AI today — and who gets to fix it?</h2>
+
+    <p>Current corporate AI systems present fundamental challenges to our society. They send private data to corporate servers with no transparency or user control. They hide behind subscription walls that price out students, non-profits, Indigenous communities, and cultural organizations. They consume enormous amounts of energy at a scale that meaningfully harms the climate. And they were built on biased, Western-dominated datasets filled with copyrighted and culturally sensitive material taken without consent or attribution.</p>
+
+    <p>Perhaps less discussed but equally serious: these systems are actively misidentifying and homogenizing cultural and aesthetic distinctions. A graduate student in our lab studying Chinese art conservation fed traditional Chinese scroll paintings into a leading commercial model and received output influenced by modern Japanese aesthetics. This is not a minor error. It reflects a systematic cultural bias baked into these systems at the data level — one that especially harms Indigenous traditions, non-Western cultures, and communities whose knowledge and creative practice have been misrepresented or erased.</p>
+
+    <p>At the <strong>iVizLab research lab (DiPaola, Dir. )</strong> at Simon Fraser University, we believe AI should not be an oracle controlled by a few. It should be a transparent, sustainable medium for human creativity. Supported by different funding, including a major five-year SSHRC Insight Grant (2026–2030), we are building a full-stack ethical AI alternative.</p>
+
+    <p>Our initiative consists of two interconnected open-source projects: <strong>ai4all</strong>, our text and knowledge layer, and <strong>RethinkAI</strong>, our visual and creative layer.</p>
+  </div>
+</section>
+
+<!-- ── PHILOSOPHY ─────────────────────────────────────────────── -->
+<section id="philosophy">
+  <div class="container">
+    <p class="section-label">Shared Principles</p>
+    <h2>The Philosophy Uniting Our Work</h2>
+
+    <p>Both projects are grounded in the same two commitments.</p>
+
+    <h3>Human-in-the-Loop Orchestration</h3>
+    <p>We are moving away from what we call the "you prompt, AI produces" trap. Passive prompting leads to what we describe as cognitive atrophy: the gradual erosion of reasoning, questioning, synthesis, and reflection in the people using these tools. Real professional and creative work is never one-shot. Our systems are built for active orchestration instead. The human decomposes the problem, directs specific steps, verifies outputs, and decides how to move forward. You are the conductor. AI executes a part. You verify, fork, reflect, and continue.</p>
+
+<img src="{{ site.url }}{{ site.baseurl }}/images/res/human_loop.jpg" alt="Diagram comparing passive prompting vs. HITL orchestration workflow" style="width:100%; border-radius:6px; margin:1.5rem 0;">
+
+    <h3>Energy Transparency and Sustainability</h3>
+    <p>Generative AI has a large and largely hidden environmental cost. A single query to GPT-5 consumes an estimated 20–50 watt-hours. Our locally-run models average around 0.13 watt-hours per query, roughly 70% less. Both of our tools include a real-time energy dashboard so users can see the actual environmental cost of every session. Our own user studies show that when people can see this information, they change their behavior: they submit fewer prompts, they think before they query, and they engage more deliberately. Visibility changes practice.</p>
+
+<img src="{{ site.url }}{{ site.baseurl }}/images/res/energy4all.jpg"  alt="Diagram comparing passive prompting vs. HITL orchestration workflow" style="width:100%; border-radius:6px; margin:1.5rem 0;">
+  </div>
+</section>
+
+<!-- ── PROJECT OVERVIEW ────────────────────────────────────────── -->
+<section id="projects">
+  <div class="container">
+    <p class="section-label">Two Projects — One Unified Mission</p>
+    <h2>What We Are Building</h2>
+
+    <div class="project-grid">
+      <div class="project-card ai4all">
+        <p class="card-label">Project 1</p>
+        <p class="card-title">ai4all</p>
+        <p class="card-sub">The Knowledge Layer — LLM / Text AI</p>
+        <p class="card-body">A fully open-source, locally-run AI system. Free, private, no cloud, no subscription. Runs on your Mac or PC. Designed for deliberate, human-led use.</p>
+        <p class="card-status">Status: v4.0 deployed</p>
+        <p class="card-target">Students · educators · non-profits · Indigenous groups · cultural institutions</p>
+      </div>
+      <div class="project-card rethinkai">
+        <p class="card-label">Project 2</p>
+        <p class="card-title">RethinkAI</p>
+        <p class="card-sub">The Creative Layer — Visual / Image AI</p>
+        <p class="card-body">A new visual generative model built from ethically sourced data, with culturally grounded captioning and a Creative Journey interface that puts artists in control.</p>
+        <p class="card-status">Funding: Large 5 year SSHRC Insight Grant</p>
+        <p class="card-target">Artists · designers · cultural institutions · Indigenous communities</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── AI4ALL ─────────────────────────────────────────────────── -->
+<section id="ai4all" style="background: var(--teal-lt);">
+  <div class="container">
+    <p class="section-label">Project 1</p>
+    <h2>ai4all: The Knowledge Layer</h2>
+
+    <p>ai4all is a fully open-source, locally-run large language model system designed to democratize access to AI for knowledge work and reduce the digital divide.</p> 
+
+   <!-- <div class="img-placeholder tall">[ IMAGE: ai4all interface — chat panel, energy dashboard, web research tab, model selector ]</div> -->
+
+    <ul class="feature-list">
+      <li><strong>Free, local, and private.</strong> ai4all runs directly on your existing Mac or PC. There are no cloud dependencies, no logins, no APIs, and no subscription costs. Your data never leaves your machine.</li>
+      <li><strong>Modular distilled models.</strong> Users choose the model size that fits their hardware and energy goals. Smaller models for lighter tasks, larger ones when needed. High-quality AI becomes accessible even on modest hardware.</li>
+      <li><strong>Built for reflection, not passive use.</strong> Unlike corporate chatbots that blend search and reasoning into a single opaque interface, ai4all keeps these tools separate. If you want web research, you invoke it explicitly. These are tools for humans to use deliberately, not intelligent entities to talk at.</li>
+      <li><strong>Live guidance built in.</strong> The interface includes efficiency tips that help users develop better habits and practice genuine human-in-the-loop orchestration, not just consume outputs.</li>
+      <li><strong>Real-world deployment.</strong> We are already using ai4all with students, researchers, and community organizations in Indigenous knowledge projects, medical education, Chinese art conservation, and animal communication research.</li>
+    </ul>
+
+  <!--  <div class="img-placeholder short">[ IMAGE: Energy dashboard detail — per-prompt Wh, session total, efficiency grade ]</div> -->
+  </div>
+</section>
+
+<!-- ── RETHINKAI ───────────────────────────────────────────────── -->
+<section id="rethinkai">
+  <div class="container">
+    <p class="section-label">Project 2</p>
+    <h2>RethinkAI: The Creative Layer</h2>
+
+    <p>Funded by a Large 5 year SSHRC Insight Grant, RethinkAI fundamentally reorients visual generative AI to protect and empower artists and cultural communities rather than displace them.</p>
+
+    <p>The problem with current visual AI models runs deep. They were trained on copyrighted and culturally sensitive works without attribution or consent. Their captioning systems misidentify and flatten cultural, historical, and aesthetic distinctions in ways that are not incidental but structural. Indigenous and non-Western artistic traditions are especially harmed. And the dominant prompt-and-produce model displaces artists from their own creative process rather than supporting it.</p>
+
+    <p>We are fixing this from the ground up across three objectives.</p>
+
+    <h3>An Ethically Sourced Dataset</h3>
+    <p>We are building a new visual generative model trained exclusively on pre-1932 public domain artworks and design works, which are both legally clean and fully documented. Every source, artist, and image in the system will be publicly searchable. Provenance is not an afterthought: it is a design requirement.</p>
+
+   <!--   <div class="img-placeholder short">[ IMAGE: Example public domain artworks from the training dataset with provenance labels ]</div> -->
+
+    <h3>Culturally Grounded Captioning</h3>
+    <p>We are developing a semantic captioning system built in collaboration with Indigenous communities, Asian cultural experts, dance practitioners, designers, and others. The goal is captions that capture technical execution, stylistic nuance, and cultural specificity rather than erasing it. We are actively seeking faculty collaborators and domain experts to help build this framework across traditions.</p>
+
+   <!-- <div class="img-placeholder short">[ IMAGE: Side-by-side comparison — generic AI caption vs. culturally grounded caption for the same artwork ]</div> -->
+
+   <h3>The Creative Journey Interface</h3>
+    <p>Artists do not prompt in the real world. They journey through a creative space: exploring, backtracking, forking, discovering. Our interface maps every creative decision the artist makes and makes that map visible and navigable. You can move forward through a creative session, return to an earlier branch, fork in a new direction, and see the full territory of your own creative process. Session-specific model personalization adapts to the artist's emerging direction. The energy dashboard is integrated throughout.</p>
+
+  <!--    <div class="img-placeholder tall">[ IMAGE: Creative Journey interface — branching creative map, session tree, fork controls ]</div> -->
+  </div>
+</section>
+
+<!-- ── WHO WE ARE ─────────────────────────────────────────────── -->
+<section id="team" style="background: var(--sand);">
+  <div class="container">
+    <p class="section-label">Who We Are</p>
+    <h2>Artists and Researchers Who Build Tools and Use Them</h2>
+
+    <div class="pull-quote">"We are not primarily researchers who study artists. We are artists and researchers who build tools and use them."</div>
+
+    <p>The iVizLab team at SFU is embedded in the communities we serve. We build working prototypes and deploy them in real creative and professional contexts: gallery shows, Chinese scroll conservation, dance and movement research, medical education, architectural ideation, and animal communication studies. We continuously refine our tools based on genuine creative and community needs, not just controlled lab conditions.</p>
+
+    <p>We have five published or submitted papers on this work, including contributions to AIES 2026, ICML 2026, IJCAI, and ICCC 2023, covering energy consumption, slow AI design principles, the concept of AI slag as distinct from AI slop, and culturally grounded generative systems.</p>
+
+   <!--   <div class="img-placeholder medium">[ IMAGE: Team / lab photo, or screenshots of tool use in community context ]</div> -->
+  </div>
+</section>
+
+<!-- ── GET INVOLVED ────────────────────────────────────────────── -->
+<section id="involved">
+  <div class="container">
+    <p class="section-label">Get Involved</p>
+    <h2>Join Us in Re-Democratizing AI</h2>
+
+    <p>We are actively seeking collaborators, community partners, and early users. If your organization works in arts, culture, education, Indigenous knowledge, or community services, we want to hear from you.</p>
+
+    <ul class="involve-list">
+      <li><strong>Faculty and researchers</strong> to co-develop the Cultural Captioning framework with domain expertise in Indigenous, Asian, dance, design, or other traditions</li>
+      <li><strong>Cultural institutions and non-profits</strong> to pilot ai4all as a private, free AI tool for your community</li>
+      <li><strong>Artists and designers</strong> to use and help shape the RethinkAI Creative Journey interface</li>
+      <li><strong>Students</strong> interested in graduate research at the intersection of AI, ethics, and community</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ── CTA ────────────────────────────────────────────────────── -->
+<div class="cta-block">
+  <div class="container">
+    <p class="cta-quote">"AI should not be an oracle controlled by a few. It should be a transparent, sustainable medium for human creativity."</p>
+    <a class="cta-btn" href="mailto:sdipaola@sfu.ca">Contact Us</a>
+    <a class="cta-btn outline" href="https://ivizlab.github.io/">ivizlab.sfu.ca</a>
+  </div>
+</div> 
+
+<br><br> <br>
+
+
+<div id="paperSection"></div>
+
+
+<strong> ------  PAPERS: AI Rethink ------ </strong>
+<br> <br>
+
+{% for publi in site.data.publist %}
+  {% if publi.research contains 'aiMeaning' %}
+  <pubtit>{{ publi.title }}</pubtit> by
+  {{ publi.authors }} --   <pubtit>{{ publi.type }}</pubtit> -- {{ publi.description }}
+  <br> <a href="{{ publi.url }}">{{ publi.display }}
+  {% endif %}  
+{% endfor %}
