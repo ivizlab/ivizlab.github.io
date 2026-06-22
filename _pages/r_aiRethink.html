@@ -484,7 +484,7 @@ permalink: /aiRethink/
     <div class="project-grid">
       <div class="project-card ai4all">
         <p class="card-label">Project 1</p>
-        <p class="card-title">U.ness (uness.org)</p>
+        <p class="card-title">U.ness (<a href="https://uness.org" target="_blank" rel="noopener noreferrer">uness.org</a>)</p>
         <p class="card-sub">The Knowledge Layer — LLM / Text AI</p>
         <p class="card-body">A fully open-source, locally-run AI system. Free, private, no cloud, no subscription. Runs on your Mac or PC. Designed for deliberate, human-led use.</p>
         <p class="card-status">Status: v4.0 deployed</p>
@@ -508,7 +508,7 @@ permalink: /aiRethink/
     <p class="section-label">Project 1</p>
     <h2>U.ness: The Knowledge Layer</h2>
 
-    <p>U.ness is a fully open-source, locally-run large language model system designed to democratize access to AI for knowledge work and reduce the digital divide.</p> 
+    <p>U.ness (<a href="https://uness.org" target="_blank" rel="noopener noreferrer">uness.org</a>) is a fully open-source, locally-run large language model system designed to democratize access to AI for knowledge work and reduce the digital divide.</p> 
 
    <!-- <div class="img-placeholder tall">[ IMAGE: U.ness interface — chat panel, energy dashboard, web research tab, model selector ]</div> -->
 
@@ -603,6 +603,14 @@ permalink: /aiRethink/
 
 <strong> ------  PAPERS: AI Rethink ------ </strong>
 <br> <br>
+
+{% for publi in site.data.publist %}
+  {% if publi.research contains 'aiEthicsC' %}
+  <pubtit>{{ publi.title }}</pubtit> by
+  {{ publi.authors }} --   <pubtit>{{ publi.type }}</pubtit> -- {{ publi.description }}
+  <br> <a href="{{ publi.url }}">{{ publi.display }}
+  {% endif %}  
+{% endfor %}
 
 {% for publi in site.data.publist %}
   {% if publi.research contains 'aiMeaning' %}
