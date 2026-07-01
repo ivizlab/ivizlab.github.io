@@ -1,0 +1,10 @@
+<div class="well">
+  <h4><strong>News</strong> <a href="/allnews">....... see all News</a></h4>
+
+  {% for article in news | limit(5) %}
+  <p><strong>-- {{ article.headline }}</strong> {{ article.date }}<br>
+  {{ article.info | markdownify | safe }}</p>
+  {% endfor %}
+
+  <h4><a href="/allnews">... see all News</a></h4>
+</div>

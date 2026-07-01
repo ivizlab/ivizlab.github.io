@@ -1,0 +1,21 @@
+{
+  "name": "ivizlab-eleventy",
+  "version": "1.0.0",
+  "description": "iVizLab website — Eleventy build",
+  "type": "module",
+  "scripts": {
+    "start": "run-p dev:*",
+    "build": "run-s build:css build:11ty",
+    "dev:11ty": "eleventy --serve --incremental",
+    "dev:css": "sass src/assets/css/main.scss docs/assets/css/main.css --watch --no-source-map",
+    "build:css": "sass src/assets/css/main.scss docs/assets/css/main.css --no-source-map",
+    "build:11ty": "eleventy"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^3.0.0",
+    "js-yaml": "^5.2.0",
+    "markdown-it": "^14.0.0",
+    "npm-run-all2": "^6.0.0",
+    "sass": "^1.80.0"
+  }
+}

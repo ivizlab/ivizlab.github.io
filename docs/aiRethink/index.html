@@ -1,0 +1,1021 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>iVizLab - Rethinking AI</title>
+
+  <meta name="description" content="iVizLab -- Rethinking Artificial Intelligence">
+
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="canonical" href="https://ivizlab.github.io/aiRethink/">
+</head>
+
+<body>
+
+  <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">iViz Lab : Simon Fraser Univ (SFU)</a>
+    </div>
+    <div class="collapse navbar-collapse" id="navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="/">Home</a></li>
+        <li><a href="/team">Team</a></li>
+        <li><a href="/research">Research</a></li>
+        <li><a href="/publications">Publications</a></li>
+        <li><a href="/allnews">News</a></li>
+        <li><a href="/media">About/Media</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+  <div class="container-fluid">
+    <div class="row">
+      <div id="textid" class="col-sm-12">
+  
+<h1>AI ReThink</h1>
+
+<p><strong><a href="#paperSection">See Related Papers</a> and Related Projects:</strong><br>
+<a href="/aiMeaning">Semantic Meaning &amp; Analysis</a> &nbsp;·&nbsp;
+<a href="/aiThought">AI Modeling Thought &amp; Language</a> &nbsp;·&nbsp;
+<a href="/virtualHumans">AI Affective Virtual Human</a> &nbsp;·&nbsp;
+<a href="/xrAvatars">XR Avatars; Edu, Coaches, Health</a> &nbsp;·&nbsp;
+<a href="/bioBrainVR">Sensing Humans (Bio/Brain/Face/Movement/VR)</a>
+</p>
+
+<p><strong>Researchers:</strong> Steve DiPaola, Vanessa Utz, Rafael Arias Gonzalez </p>
+
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --teal:      #027D7A;
+    --teal-mid:  #4A7C7A;
+    --teal-lt:   #E8F4F3;
+    --teal-rule: #B2D8D6;
+    --rust:      #C05A3A;
+    --rust-lt:   #F5EDE9;
+    --dark:      #1A2631;
+    --mid:       #3D5263;
+    --sand:      #F5F1EC;
+    --white:     #ffffff;
+    --body-font: 'Georgia', serif;
+    --ui-font:   'Arial', 'Helvetica Neue', sans-serif;
+    --max:       860px;
+  }
+
+  html { font-size: 17px; scroll-behavior: smooth; }
+  body { font-family: var(--body-font); color: var(--dark); background: var(--white); line-height: 1.75; }
+  h1, h2, h3, nav, .label, .stat-label, footer { font-family: var(--ui-font); }
+  p { margin-bottom: 1.15em; }
+  p:last-child { margin-bottom: 0; }
+  strong { font-weight: 700; }
+  .container { max-width: var(--max); margin: 0 auto; padding: 0 2rem; }
+  section { padding: 4rem 0; }
+  section + section { border-top: 1px solid var(--teal-rule); }
+
+  nav { position: sticky; top: 0; z-index: 100; background: var(--dark); padding: 0.75rem 2rem; display: flex; align-items: center; gap: 2rem; font-size: 0.82rem; letter-spacing: 0.03em; }
+  .nav-brand { color: var(--teal-rule); font-weight: 700; text-decoration: none; margin-right: auto; font-size: 0.88rem; }
+  nav a { color: #8AADAB; text-decoration: none; transition: color 0.2s; }
+  nav a:hover { color: var(--white); }
+
+  .hero { background: var(--teal); color: var(--white); padding: 5rem 0 4rem; border-bottom: none; }
+  .hero-eyebrow { font-family: var(--ui-font); font-size: 0.8rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--teal-rule); margin-bottom: 1rem; }
+  .hero h1 { font-size: clamp(2rem, 5vw, 3rem); font-weight: 800; line-height: 1.15; margin-bottom: 0.6rem; color: var(--white); }
+  .hero-sub { font-family: var(--ui-font); font-size: 1.15rem; color: #D4EFED; font-style: italic; margin-bottom: 2rem; }
+  .hero-meta { font-family: var(--ui-font); font-size: 0.85rem; color: #A8D8D5; }
+
+  .stats { display: flex; gap: 1px; background: var(--teal-rule); border-top: 1px solid var(--teal-rule); border-bottom: 1px solid var(--teal-rule); }
+  .stat { flex: 1; background: var(--teal-lt); padding: 1.6rem 1rem; text-align: center; display: flex; flex-direction: column; align-items: center; justify-content: flex-start; }
+  .stat-num { font-family: var(--ui-font); font-size: 2rem; font-weight: 800; color: var(--teal); line-height: 1; margin-bottom: 0.4rem; }
+  .stat-label { font-size: 0.78rem; color: var(--mid); line-height: 1.35; }
+  .stat-label em { display: block; font-style: normal; font-size: 0.72rem; color: var(--teal-mid); margin-top: 0.2rem; }
+
+  .section-label { font-family: var(--ui-font); font-size: 0.75rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--teal-mid); margin-bottom: 0.5rem; }
+  h2 { font-size: 1.65rem; font-weight: 700; color: var(--dark); margin-bottom: 1.4rem; line-height: 1.2; }
+  h3 { font-size: 1rem; font-weight: 700; color: var(--dark); margin-bottom: 0.3rem; margin-top: 1.4rem; }
+
+  .pull-quote { border-left: 4px solid var(--teal); padding: 0.8rem 0 0.8rem 1.5rem; margin: 2rem 0; font-style: italic; font-size: 1.1rem; color: var(--teal-mid); line-height: 1.6; }
+
+  .project-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-top: 2rem; }
+  .project-card { border-radius: 8px; padding: 2rem; }
+  .project-card.ai4all { background: var(--teal-lt); }
+  .project-card.rethinkai { background: var(--rust-lt); }
+  .card-label { font-family: var(--ui-font); font-size: 0.72rem; letter-spacing: 0.12em; text-transform: uppercase; margin-bottom: 0.3rem; }
+  .ai4all .card-label { color: var(--teal); }
+  .rethinkai .card-label { color: var(--rust); }
+  .card-title { font-family: var(--ui-font); font-size: 1.5rem; font-weight: 800; color: var(--dark); margin-bottom: 0.25rem; }
+  .card-sub { font-family: var(--ui-font); font-size: 0.85rem; font-style: italic; margin-bottom: 1rem; }
+  .ai4all .card-sub { color: var(--teal-mid); }
+  .rethinkai .card-sub { color: var(--rust); }
+  .card-body { font-size: 0.92rem; line-height: 1.7; }
+  .card-status { font-family: var(--ui-font); font-size: 0.82rem; font-weight: 700; margin-top: 1rem; }
+  .ai4all .card-status { color: var(--teal); }
+  .rethinkai .card-status { color: var(--rust); }
+  .card-target { font-family: var(--ui-font); font-size: 0.8rem; font-style: italic; color: var(--mid); margin-top: 0.3rem; }
+
+  .feature-list { list-style: none; padding: 0; }
+  .feature-list li { padding: 0.6rem 0 0.6rem 1.2rem; position: relative; border-bottom: 1px solid var(--teal-rule); font-size: 0.95rem; line-height: 1.65; }
+  .feature-list li:last-child { border-bottom: none; }
+  .feature-list li::before { content: ''; position: absolute; left: 0; top: 1.15rem; width: 6px; height: 6px; border-radius: 50%; background: var(--teal); }
+
+  .involve-list { list-style: none; padding: 0; }
+  .involve-list li { padding: 0.8rem 0 0.8rem 1.6rem; position: relative; border-bottom: 1px solid var(--teal-rule); font-size: 0.95rem; line-height: 1.65; }
+  .involve-list li:last-child { border-bottom: none; }
+  .involve-list li::before { content: '\25B8'; position: absolute; left: 0; top: 0.85rem; color: var(--teal); font-size: 0.9rem; }
+
+  .cta-block { background: var(--dark); color: var(--white); padding: 3.5rem 0; text-align: center; border-top: none; }
+  .cta-block h2 { color: var(--white); margin-bottom: 0.5rem; }
+  .cta-quote { font-style: italic; color: #A8D8D5; font-size: 1.05rem; max-width: 600px; margin: 0 auto 2rem; line-height: 1.6; }
+  .cta-btn { display: inline-block; background: var(--teal); color: var(--white); font-family: var(--ui-font); font-size: 0.9rem; font-weight: 700; letter-spacing: 0.04em; padding: 0.85rem 2rem; border-radius: 4px; text-decoration: none; transition: background 0.2s; margin: 0.4rem; }
+  .cta-btn:hover { background: #039490; }
+  .cta-btn.outline { background: transparent; border: 2px solid var(--teal-rule); color: var(--teal-rule); }
+  .cta-btn.outline:hover { background: rgba(2,125,122,0.2); }
+
+  footer { background: #111C24; color: #6AADAB; font-size: 0.82rem; padding: 1.5rem 2rem; text-align: center; line-height: 2; }
+  footer a { color: #8AADAB; text-decoration: none; }
+  footer a:hover { color: var(--white); }
+
+  @media (max-width: 640px) {
+    .project-grid { grid-template-columns: 1fr; }
+    .stats { flex-direction: column; gap: 1px; }
+    nav a:not(.nav-brand) { display: none; }
+  }
+</style>
+
+<div class="hero">
+  <div class="container">
+    <p class="hero-eyebrow">Steve DiPaola, Dir. · iVizLab · Simon Fraser University</p>
+    <h1>Rethinking Artificial Intelligence</h1>
+    <p class="hero-sub">A Community Answer to Corporate AI</p>
+    <p class="hero-meta">SSHRC Insight Grant 2026–2030 &nbsp;·&nbsp; Large 5 Year Combined Funding &nbsp;·&nbsp; Open Source</p>
+  </div>
+</div>
+
+<div class="stats">
+  <div class="stat"><div class="stat-num">70%</div><div class="stat-label">less energy than GPT-5 per query<em>visibility built in — live energy dashboard</em></div></div>
+  <div class="stat"><div class="stat-num">100%</div><div class="stat-label">private — your data never leaves your machine<em>no cloud, no tracking, no exceptions</em></div></div>
+  <div class="stat"><div class="stat-num">$0</div><div class="stat-label">no subscription, no account, no cloud<em>free forever — unlimited use on your own hardware</em></div></div>
+  <div class="stat"><div class="stat-num">0</div><div class="stat-label">corporate gatekeepers<em>community-built, not corporate-controlled</em></div></div>
+</div>
+
+<section id="intro">
+  <div class="container">
+    <p class="section-label">The Problem</p>
+    <h2>What is wrong with AI today — and who gets to fix it?</h2>
+    <p>Current corporate AI systems present fundamental challenges to our society. They send private data to corporate servers with no transparency or user control. They hide behind subscription walls that price out students, non-profits, Indigenous communities, and cultural organizations. They consume enormous amounts of energy at a scale that meaningfully harms the climate. And they were built on biased, Western-dominated datasets filled with copyrighted and culturally sensitive material taken without consent or attribution.</p>
+    <p>Perhaps less discussed but equally serious: these systems are actively misidentifying and homogenizing cultural and aesthetic distinctions. A graduate student in our lab studying Chinese art conservation fed traditional Chinese scroll paintings into a leading commercial model and received output influenced by modern Japanese aesthetics. This is not a minor error. It reflects a systematic cultural bias baked into these systems at the data level.</p>
+    <p>At the <strong>iVizLab research lab (DiPaola, Dir.)</strong> at Simon Fraser University, we believe AI should not be an oracle controlled by a few. It should be a transparent, sustainable medium for human creativity. Our initiative consists of two interconnected open-source projects: <strong>U.ness</strong>, our text and knowledge layer, and <strong>RethinkAI</strong>, our visual and creative layer.</p>
+  </div>
+</section>
+
+<section id="philosophy">
+  <div class="container">
+    <p class="section-label">Shared Principles</p>
+    <h2>The Philosophy Uniting Our Work</h2>
+    <p>Both projects are grounded in the same two commitments.</p>
+    <h3>Human-in-the-Loop Orchestration</h3>
+    <p>We are moving away from what we call the "you prompt, AI produces" trap. Passive prompting leads to what we describe as cognitive atrophy: the gradual erosion of reasoning, questioning, synthesis, and reflection in the people using these tools. Real professional and creative work is never one-shot. Our systems are built for active orchestration instead.</p>
+    <img src="/assets/images/res/human_loop.jpg" alt="Diagram comparing passive prompting vs. HITL orchestration workflow" style="width:100%; border-radius:6px; margin:1.5rem 0;">
+    <h3>Energy Transparency and Sustainability</h3>
+    <p>Generative AI has a large and largely hidden environmental cost. A single query to GPT-5 consumes an estimated 20–50 watt-hours. Our locally-run models average around 0.13 watt-hours per query, roughly 70% less. Both of our tools include a real-time energy dashboard so users can see the actual environmental cost of every session.</p>
+    <img src="/assets/images/res/energy4all.jpg" alt="Energy dashboard diagram" style="width:100%; border-radius:6px; margin:1.5rem 0;">
+  </div>
+</section>
+
+<section id="projects">
+  <div class="container">
+    <p class="section-label">Two Projects — One Unified Mission</p>
+    <h2>What We Are Building</h2>
+    <div class="project-grid">
+      <div class="project-card ai4all">
+        <p class="card-label">Project 1</p>
+        <p class="card-title">U.ness (<a href="https://uness.org" target="_blank" rel="noopener noreferrer">uness.org</a>)</p>
+        <p class="card-sub">The Knowledge Layer — LLM / Text AI</p>
+        <p class="card-body">A fully open-source, locally-run AI system. Free, private, no cloud, no subscription. Runs on your Mac or PC. Designed for deliberate, human-led use.</p>
+        <p class="card-status">Status: v4.0 deployed</p>
+        <p class="card-target">Students · educators · non-profits · Indigenous groups · cultural institutions</p>
+      </div>
+      <div class="project-card rethinkai">
+        <p class="card-label">Project 2</p>
+        <p class="card-title">RethinkAI</p>
+        <p class="card-sub">The Creative Layer — Visual / Image AI</p>
+        <p class="card-body">A new visual generative model built from ethically sourced data, with culturally grounded captioning and a Creative Journey interface that puts artists in control.</p>
+        <p class="card-status">Funding: Large 5 year SSHRC Insight Grant</p>
+        <p class="card-target">Artists · designers · cultural institutions · Indigenous communities</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="ai4all" style="background: var(--teal-lt);">
+  <div class="container">
+    <p class="section-label">Project 1</p>
+    <h2>U.ness: The Knowledge Layer</h2>
+    <p>U.ness (<a href="https://uness.org" target="_blank" rel="noopener noreferrer">uness.org</a>) is a fully open-source, locally-run large language model system designed to democratize access to AI for knowledge work and reduce the digital divide.</p>
+    <ul class="feature-list">
+      <li><strong>Free, local, and private.</strong> U.ness runs directly on your existing Mac or PC. There are no cloud dependencies, no logins, no APIs, and no subscription costs.</li>
+      <li><strong>Modular distilled models.</strong> Users choose the model size that fits their hardware and energy goals.</li>
+      <li><strong>Built for reflection, not passive use.</strong> U.ness keeps search and reasoning tools separate. These are tools for humans to use deliberately.</li>
+      <li><strong>Live guidance built in.</strong> The interface includes efficiency tips that help users develop better habits.</li>
+      <li><strong>Real-world deployment.</strong> We are already using U.ness with students, researchers, and community organizations.</li>
+    </ul>
+  </div>
+</section>
+
+<section id="rethinkai">
+  <div class="container">
+    <p class="section-label">Project 2</p>
+    <h2>RethinkAI: The Creative Layer</h2>
+    <p>Funded by a Large 5 year SSHRC Insight Grant, RethinkAI fundamentally reorients visual generative AI to protect and empower artists and cultural communities rather than displace them.</p>
+    <h3>An Ethically Sourced Dataset</h3>
+    <p>We are building a new visual generative model trained exclusively on pre-1932 public domain artworks. Every source, artist, and image in the system will be publicly searchable.</p>
+    <h3>Culturally Grounded Captioning</h3>
+    <p>We are developing a semantic captioning system built in collaboration with Indigenous communities, Asian cultural experts, dance practitioners, designers, and others.</p>
+    <h3>The Creative Journey Interface</h3>
+    <p>Artists do not prompt in the real world. They journey through a creative space: exploring, backtracking, forking, discovering. Our interface maps every creative decision the artist makes and makes that map visible and navigable.</p>
+  </div>
+</section>
+
+<section id="team" style="background: var(--sand);">
+  <div class="container">
+    <p class="section-label">Who We Are</p>
+    <h2>Artists and Researchers Who Build Tools and Use Them</h2>
+    <div class="pull-quote">"We are not primarily researchers who study artists. We are artists and researchers who build tools and use them."</div>
+    <p>The iVizLab team at SFU is embedded in the communities we serve. We build working prototypes and deploy them in real creative and professional contexts: gallery shows, Chinese scroll conservation, dance and movement research, medical education, architectural ideation, and animal communication studies.</p>
+    <p>We have five published or submitted papers on this work, including contributions to AIES 2026, ICML 2026, IJCAI, and ICCC 2023.</p>
+  </div>
+</section>
+
+<section id="involved">
+  <div class="container">
+    <p class="section-label">Get Involved</p>
+    <h2>Join Us in Re-Democratizing AI</h2>
+    <p>We are actively seeking collaborators, community partners, and early users.</p>
+    <ul class="involve-list">
+      <li><strong>Faculty and researchers</strong> to co-develop the Cultural Captioning framework</li>
+      <li><strong>Cultural institutions and non-profits</strong> to pilot U.ness as a private, free AI tool</li>
+      <li><strong>Artists and designers</strong> to use and help shape the RethinkAI Creative Journey interface</li>
+      <li><strong>Students</strong> interested in graduate research at the intersection of AI, ethics, and community</li>
+    </ul>
+  </div>
+</section>
+
+<div class="cta-block">
+  <div class="container">
+    <p class="cta-quote">"AI should not be an oracle controlled by a few. It should be a transparent, sustainable medium for human creativity."</p>
+    <a class="cta-btn" href="mailto:sdipaola@sfu.ca">Contact Us</a>
+    <a class="cta-btn outline" href="/">ivizlab.sfu.ca</a>
+  </div>
+</div>
+
+<br><br>
+
+<div id="paperSection"></div>
+
+<strong>------ PAPERS: AI Rethink ------</strong>
+<br><br>
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <pubtit> Digital Overconsumption and Waste; A Closer Look at the Impacts of Generative AI</pubtit> by
+  Utz V; DiPaola S -- <pubtit>Conference</pubtit> -- Ethical Considerations in Creative Applications of Computer Vision (EC3V) Workshop
+  <br><a href="https://www.google.com/search?q=&#39; Digital Overconsumption and Waste; A Closer Look at the Impacts of Generative AI&#39; &#39; Conference on Computer Vision and Pattern Recognition (CVPR) 2023&#39;"> Conference on Computer Vision and Pattern Recognition (CVPR) 2023 (2023)</a>
+  
+
+  
+  <pubtit> Climate Implications of Diffusion-based Generative Visual AI Systems and their Mass Adoption</pubtit> by
+  Utz V; DiPaola S -- <pubtit>Conference</pubtit> -- 9 pages
+  <br><a href="https://www.google.com/search?q=&#39; Climate Implications of Diffusion-based Generative Visual AI Systems and their Mass Adoption&#39; &#39; International Conference on Computational Creativity&#39;"> International Conference on Computational Creativity (2023)</a>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+
+  
+
+  
+
+  
+  <pubtit> Applying GenAI to the Conservation and Reconstruction of Chinese Paintings Challenges and Insights</pubtit> by
+  Dai S , Hennessy K, DiPaola S. -- <pubtit>Conference</pubtit> -- 23 pages
+  <br><a href="https://www.google.com/search?q=&#39; Applying GenAI to the Conservation and Reconstruction of Chinese Paintings Challenges and Insights&#39; &#39; Proceedings of Electronic Visualisation and the Arts, British Computer Society&#39;"> Proceedings of Electronic Visualisation and the Arts, British Computer Society (2025)</a>
+  
+
+  
+
+  
+
+  
+
+  
+  <pubtit> Designing a Wheel-based Assessment Tool to Measure Visual Aesthetic Emotions</pubtit> by
+  Abukhodair N; Song M; DiPaola S -- <pubtit>Journal</pubtit> -- 23 pages
+  <br><a href="https://www.google.com/search?q=&#39; Designing a Wheel-based Assessment Tool to Measure Visual Aesthetic Emotions&#39; &#39; Cognitive Systems Research&#39;"> Cognitive Systems Research (2023)</a>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <pubtit> Lucid Loop; A Virtual Deep Learning Biofeedback System for Lucid Dreaming Practice</pubtit> by
+  Kitson A; DiPaola S; Riecke B -- <pubtit>Conference</pubtit> -- Paper LBW1322. 6 pages
+  <br><a href="https://www.google.com/search?q=&#39; Lucid Loop; A Virtual Deep Learning Biofeedback System for Lucid Dreaming Practice&#39; &#39; ACM CHI Conference on Human Factors in Computing Systems (CHI)&#39;"> ACM CHI Conference on Human Factors in Computing Systems (CHI) (2019)</a>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <pubtit> Deep Learning for Classification of Peak Emotions within Virtual Reality Systems</pubtit> by
+  Quesnel D; DiPaola S; Rieke B -- <pubtit>Conference</pubtit> -- pp. 6-11
+  <br><a href="https://www.google.com/search?q=&#39; Deep Learning for Classification of Peak Emotions within Virtual Reality Systems&#39; &#39; Semantic Ambient Media Experiences (SAME); Artificial Intelligence MEETS Virtual and Augmented Worlds (AIVR) with SIGGRAPH Asia&#39;"> Semantic Ambient Media Experiences (SAME); Artificial Intelligence MEETS Virtual and Augmented Worlds (AIVR) with SIGGRAPH Asia (2018)</a>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <pubtit> Engagement with artificial intelligence through natural interaction models</pubtit> by
+  Feldman S; Yalcin ON; DiPaola S -- <pubtit>Conference</pubtit> -- British Computer Society. pp. 296-303
+  <br><a href="https://www.google.com/search?q=&#39; Engagement with artificial intelligence through natural interaction models&#39; &#39; Electronic Visualisation and the Arts (EVA)&#39;"> Electronic Visualisation and the Arts (EVA) (2017)</a>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <pubtit> Movement Awareness through Emotion Based Aesthetic Visualization</pubtit> by
+  Salevati S; DiPaola S; Carlson K -- <pubtit>Conference</pubtit> -- British Computer Society. 8 pages. London
+  <br><a href="https://www.google.com/search?q=&#39; Movement Awareness through Emotion Based Aesthetic Visualization&#39; &#39; Electronic Visualisation and the Arts (EVA)&#39;"> Electronic Visualisation and the Arts (EVA) (2016)</a>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <pubtit> Touch of the Eye; Does Observation Reflect Haptic Metaphors in Art Drawing?</pubtit> by
+  Choi S K; DiPaola S -- <pubtit>Conference</pubtit> -- pp. 579-588
+  <br><a href="https://www.google.com/search?q=&#39; Touch of the Eye; Does Observation Reflect Haptic Metaphors in Art Drawing?&#39; &#39; ACM Conf on Human Factors in Computing Systems (CHI)&#39;"> ACM Conf on Human Factors in Computing Systems (CHI) (2015)</a>
+  
+
+  
+
+  
+
+  
+  <pubtit> A Creative Artificial Intelligence System to Investigate User Experience; Affect; Emotion and Creativity</pubtit> by
+  Salevati S; DiPaola S -- <pubtit>Conference</pubtit> -- British Computer Society. 8 pages. London
+  <br><a href="https://www.google.com/search?q=&#39; A Creative Artificial Intelligence System to Investigate User Experience; Affect; Emotion and Creativity&#39; &#39; Electronic Visualisation and the Arts (EVA)&#39;"> Electronic Visualisation and the Arts (EVA) (2015)</a>
+  
+
+  
+  <pubtit> Enhancing Viewer&#39;s Emotional Connections to The Traditional Art Creative Process Via an AI Interactive System</pubtit> by
+  Salevati M; DiPaola S -- <pubtit>Conference</pubtit> -- British Computer Society. 8 pages. London
+  <br><a href="https://www.google.com/search?q=&#39; Enhancing Viewers Emotional Connections to The Traditional Art Creative Process Via an AI Interactive System&#39; &#39; Electronic Visualisation and the Arts (EVA)&#39;"> Electronic Visualisation and the Arts (EVA) (2015)</a>
+  
+
+  
+  <pubtit> Using a Contextual Focus Model for an Automatic Creativity Algorithm to Generate Art Work</pubtit> by
+  DiPaola S -- <pubtit>Journal</pubtit> -- Special Issue; Bio Inspired Cognitive Architectures. Vol 41. pp. 212-219
+  <br><a href="https://www.google.com/search?q=&#39; Using a Contextual Focus Model for an Automatic Creativity Algorithm to Generate Art Work&#39; &#39; Procedia Computer Science&#39;"> Procedia Computer Science (2014)</a>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <pubtit> Face; Portrait; Mask - Using a Parameterized System to Explore Synthetic Face Space</pubtit> by
+  DiPaola S -- <pubtit>Book</pubtit> -- Bowen. Keene. Ng. (Eds). pp. 213-227. Springer
+  <br><a href="https://www.google.com/search?q=&#39; Face; Portrait; Mask - Using a Parameterized System to Explore Synthetic Face Space&#39; &#39; Book Chapter. Electronic Visualisation in Arts and Culture&#39;"> Book Chapter. Electronic Visualisation in Arts and Culture (2013)</a>
+  
+
+  
+
+  
+
+  
+  <pubtit> The Role of Micronarrative in the Design and Experience of Digital Games</pubtit> by
+  Bizzocchi  J; Nixon M; DiPaola S; Funk N -- <pubtit>Conference</pubtit> -- Atlanta. Georgia. pp. 161-197
+  <br><a href="https://www.google.com/search?q=&#39; The Role of Micronarrative in the Design and Experience of Digital Games&#39; &#39; Digital Games Research Association Conference (DIGRA)&#39;"> Digital Games Research Association Conference (DIGRA) (2013)</a>
+  
+
+  
+  <pubtit> How a Painter Paints; An Interdisciplinary Understanding of Embodied Creativity</pubtit> by
+  Choi S K; DiPaola S -- <pubtit>Conference</pubtit> -- British Computer Society. pp. 127-134. London
+  <br><a href="https://www.google.com/search?q=&#39; How a Painter Paints; An Interdisciplinary Understanding of Embodied Creativity&#39; &#39; Electronic Visualisation and the Arts (EVA)&#39;"> Electronic Visualisation and the Arts (EVA) (2013)</a>
+  
+
+  
+
+  
+
+  
+
+  
+  <pubtit> How Did Humans Become So Creative? A Computational Approach</pubtit> by
+  Gabora L; DiPaola S -- <pubtit>Conference</pubtit> -- pp. 203-211
+  <br><a href="https://www.google.com/search?q=&#39; How Did Humans Become So Creative? A Computational Approach&#39; &#39; International Conference on Computational Creativity (ICCC)&#39;"> International Conference on Computational Creativity (ICCC) (2012)</a>
+  
+
+  
+  <pubtit> Exploring the Effect of Color Palette in Painterly Rendered Character Sequences</pubtit> by
+  Seifi H; DiPaola S; Enns JT -- <pubtit>Conference</pubtit> -- pp. 89-97
+  <br><a href="https://www.google.com/search?q=&#39; Exploring the Effect of Color Palette in Painterly Rendered Character Sequences&#39; &#39; International Symposium on Computational Aesthetics in Graphics; Visualization &amp; Imaging&#39;"> International Symposium on Computational Aesthetics in Graphics; Visualization &amp; Imaging (2012)</a>
+  
+
+  
+
+  
+  <pubtit> Formalizing an Interconnected Syntax For Picassos Creative Process In Producing Guernica</pubtit> by
+  DiPaola S; Smith A -- <pubtit>Conference</pubtit> -- 6 pages
+  <br><a href="https://www.google.com/search?q=&#39; Formalizing an Interconnected Syntax For Picassos Creative Process In Producing Guernica&#39; &#39; Conceptual Structure; Discourse and Language&#39;"> Conceptual Structure; Discourse and Language (2012)</a>
+  
+
+  
+  <pubtit> The Tacit and the Trace; Towards Syntax Of The Creative Act</pubtit> by
+  Choi S K; DiPaola S; Schiphorst T -- <pubtit>Conference</pubtit> -- 6 pages
+  <br><a href="https://www.google.com/search?q=&#39; The Tacit and the Trace; Towards Syntax Of The Creative Act&#39; &#39; Conceptual Structure; Discourse and Language&#39;"> Conceptual Structure; Discourse and Language (2012)</a>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <pubtit> Rembrandts Textural Agency;  A Shared Perspective in Visual Art and Science</pubtit> by
+  DiPaola S; Riebe C; Enns JT -- <pubtit>Journal</pubtit> -- Vol 43. No 3. pp. 145-151
+  <br><a href="https://www.google.com/search?q=&#39; Rembrandts Textural Agency;  A Shared Perspective in Visual Art and Science&#39; &#39; Leonardo&#39;"> Leonardo (2011)</a>
+  
+
+  
+
+  
+
+  
+
+  
+  <pubtit> Following the Masters; Viewer Gaze is Directed by Relative Detail in Painted Portraits</pubtit> by
+  Riebe C; DiPaola S;  Enns JT -- <pubtit>Journal</pubtit> -- Vol 9. No 8. pp. 368-368 (abstract)
+  <br><a href="https://www.google.com/search?q=&#39; Following the Masters; Viewer Gaze is Directed by Relative Detail in Painted Portraits&#39; &#39; Journal of Vision&#39;"> Journal of Vision (2009)</a>
+  
+
+  
+
+  
+  <pubtit> Incorporating Characteristics of Human Creativity into an Evolutionary Art Algorithm</pubtit> by
+  DiPaola S; Gabora L -- <pubtit>Journal</pubtit> -- Vol 10. No 2. pp. 97-110
+  <br><a href="https://www.google.com/search?q=&#39; Incorporating Characteristics of Human Creativity into an Evolutionary Art Algorithm&#39; &#39; Genetic Programming and Evolvable Machines Journal&#39;"> Genetic Programming and Evolvable Machines Journal (2009)</a>
+  
+
+  
+
+  
+
+  
+  <pubtit> Following the masters; Viewer gaze is directed by relative detail in painted portraits</pubtit> by
+  Riebe C; DiPaola S; Enns JT -- <pubtit>Conference</pubtit> -- 9th Annual Meeting.
+  <br><a href="https://www.google.com/search?q=&#39; Following the masters; Viewer gaze is directed by relative detail in painted portraits&#39; &#39; Abstracts of the Vision Sciences Society&#39;"> Abstracts of the Vision Sciences Society (2009)</a>
+  
+
+  
+  <pubtit> Quantifying artist&#39;s use of human vision constructs to influence viewer eye gaze</pubtit> by
+  DiPaola S -- <pubtit>Conference</pubtit> -- 6 pages
+  <br><a href="https://www.google.com/search?q=&#39; Quantifying artist?s use of human vision constructs to influence viewer eye gaze&#39; &#39; SPIE Human Vision and Imaging. Int. Society for Optical Engineering&#39;"> SPIE Human Vision and Imaging. Int. Society for Optical Engineering (2009)</a>
+  
+
+  
+
+  
+
+  
+
+  
+  <pubtit> Darwins Enduring Legacy</pubtit> by
+  DiPaola S -- <pubtit>Journal</pubtit> -- Images of my research in computer model of evolution ? selected by the Nature editors to accompany this essay (invited - not peer reviewed). Vol 451. pp. 632-633
+  <br><a href="https://www.google.com/search?q=&#39; Darwin?s Enduring Legacy&#39; &#39; The Journal Nature&#39;"> The Journal Nature (2008)</a>
+  
+
+  
+  <pubtit> The Trace and the Gaze; Textural Agency in Rembrandt?s Late Portraiture from a Vision Science Perspective</pubtit> by
+  DiPaola S -- <pubtit>Conference</pubtit> -- British Computer Society. 8 pages. London
+  <br><a href="https://www.google.com/search?q=&#39; The Trace and the Gaze; Textural Agency in Rembrandt?s Late Portraiture from a Vision Science Perspective&#39; &#39; Electronic Visualisation and the Arts (EVA)&#39;"> Electronic Visualisation and the Arts (EVA) (2008)</a>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <pubtit> Emotional Remapping of Music to Facial Animation</pubtit> by
+  DiPaola S; Arya A -- <pubtit>Conference</pubtit> -- pp. 143-149
+  <br><a href="https://www.google.com/search?q=&#39; Emotional Remapping of Music to Facial Animation&#39; &#39; ACM SIGGRAPH - Symposium on Videogames&#39;"> ACM SIGGRAPH - Symposium on Videogames (2006)</a>
+  
+
+  
+
+  
+  <pubtit> Evolving Portrait Painter Programs using Genetic Programming to Explore Computer Creativity</pubtit> by
+  DiPaola S -- <pubtit>Conference</pubtit> -- 7 pages
+  <br><a href="https://www.google.com/search?q=&#39; Evolving Portrait Painter Programs using Genetic Programming to Explore Computer Creativity&#39; &#39; International Digital Media and Arts Association (IDMA)&#39;"> International Digital Media and Arts Association (IDMA) (2006)</a>
+  
+
+  
+
+  
+
+  
+
+  
+  <pubtit> Simulating Face to Face Collaboration for Interactive Learning Systems</pubtit> by
+  DiPaola S; Arya A; Chan J -- <pubtit>Conference</pubtit> -- 6 pages. Vancouver
+  <br><a href="https://www.google.com/search?q=&#39; Simulating Face to Face Collaboration for Interactive Learning Systems&#39; &#39; E-Learn 2005&#39;"> E-Learn 2005 (2005)</a>
+  
+
+  
+
+  
+  <pubtit> Towards an Interactive Visualization of Game Design Patterns</pubtit> by
+  Tolmie J; DiPaola S; Charles A -- <pubtit>Conference</pubtit> -- Vancouver
+  <br><a href="https://www.google.com/search?q=&#39; Towards an Interactive Visualization of Game Design Patterns&#39; &#39; Digital Games Research Association&#39;"> Digital Games Research Association (2005)</a>
+  
+
+  
+
+  
+
+  
+
+  
+  <pubtit> Affective Communication Remapping in MusicFace System</pubtit> by
+  DiPaola S; Arya A -- <pubtit>Conference</pubtit> -- British Computer Society. 8 pages. London
+  <br><a href="https://www.google.com/search?q=&#39; Affective Communication Remapping in MusicFace System&#39; &#39; Electronic Visualisation and the Arts (EVA)&#39;"> Electronic Visualisation and the Arts (EVA) (2004)</a>
+  
+
+  
+
+  
+
+  
+  <pubtit> Investigating Face Space</pubtit> by
+  DiPaola S -- <pubtit>Conference</pubtit> -- pp. 207-207
+  <br><a href="https://www.google.com/search?q=&#39; Investigating Face Space&#39; &#39; ACM SIGGRAPH - Conference Abstracts and Applications&#39;"> ACM SIGGRAPH - Conference Abstracts and Applications (2002)</a>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+</div>
+
+    </div>
+  </div>
+
+  <div id="footer" class="panel">
+  <div class="panel-footer">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-4">
+          &copy; 2024 iVizlab - - - - - - - - - - - - - - - - - - - - -
+          <p>We are part of the <a href="https://www.sfu.ca/siat.html">School of Interactive Art and Tech</a> at <a href="https://www.sfu.ca/">Simon Fraser University</a>.</p>
+          <p>Site made with <a href="https://www.11ty.dev">Eleventy</a>; <a href="/aboutwebsite.html">copy and modify.</a></p>
+        </div>
+        <div class="col-sm-4">
+          <a href="/media">Lab Pix and Media</a> - - - - - - - - - - - -<br>
+          Contact: <a href="/dipaola/">Steve DiPaola</a><br>
+          Simon Fraser University<br>
+          Surrey, BC, Canada V3T 0A3<br>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="/assets/js/bootstrap.min.js"></script>
+
+
+</body>
+</html>

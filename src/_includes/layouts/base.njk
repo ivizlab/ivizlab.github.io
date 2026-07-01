@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>{% if title %}{{ title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
+
+  <meta name="description" content="{% if excerpt %}{{ excerpt | striptags | truncate(160) }}{% else %}{{ site.description }}{% endif %}">
+
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="canonical" href="{{ site.url }}{{ page.url }}">
+</head>
+
+<body>
+
+  {% include "partials/header.njk" %}
+
+  <div class="container-fluid">
+    <div class="row">
+      {{ content | safe }}
+    </div>
+  </div>
+
+  {% include "partials/footer.njk" %}
+
+</body>
+</html>

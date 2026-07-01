@@ -1,0 +1,10 @@
+---
+layout: base.njk
+---
+<div id="homeid" class="col-sm-8">
+  <h1>Welcome to the iViz Lab</h1>
+  {{ content | safe }}
+</div>
+<div id="newsid" class="col-sm-4">
+  {% include "partials/news.njk" %}
+</div>
