@@ -21,7 +21,7 @@ permalink: /media/
 #### The 2025 CBC News feature on our <a href="https://www.cbc.ca/news/canada/british-columbia/artificial-intelligence-lab-women-stem-1.7475723" target="_blank">Lab</a>
 
 <a href="https://www.cbc.ca/news/canada/british-columbia/artificial-intelligence-lab-women-stem-1.7475723" target="_blank">
-  <img src="/assets/images/people/labwomen.jpg" class="img-responsive" width="50%" alt="iVizLab News on CBC" />
+  <img src="/assets/images/people/labWomen.jpg" class="img-responsive" width="50%" alt="iVizLab News on CBC" />
 </a>
 <br>
 
