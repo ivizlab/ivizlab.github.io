@@ -1,4 +1,28 @@
 - new: 1
+  type: Conference
+  number: 1
+  authors:  Utz V
+  title:  " Environmental Slow AI, Design principles for generative systems. International Conference on Machine Learning" 
+  journal:  " International Conference on Machine Learning (ICML) 2026" 
+  description:  8 pages
+  year: 2026
+  research: aiEthicsC
+  display:  " International Conference on Machine Learning (ICML) 2026" 
+  url: https://www.google.com/search?q=' Environmental Slow AI Design principles for generative systems. International Conference on Machine Learning' ' Conference on Computer Vision and Pattern Recognition (CVPR) 2023'
+
+- new: 1
+  type: Conference
+  number: 1
+  authors:  Utz V
+  title:  " Generative AI has a slag problem" 
+  journal:  " International Joint Conference on Artificial Intelligence (IJCAI)" 
+  description:    
+  year: 2026
+  research: aiEthicsC
+  display:  " International Joint Conference on Artificial Intelligence (IJCAI)" 
+  url: https://www.google.com/search?q=' Generative AI has a slag problem Utz'
+
+- new: 1
   type: Journal
   number: 1
   authors: Abukhodair N, DiPaola S

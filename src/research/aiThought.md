@@ -50,14 +50,20 @@ Our AI work in cognitive modeling of thought, expression and language using adva
 **Video 4:** Talking with our Virtual AI Picasso live (created with ivizlab research and [Virtro](https://www.virtro.ca/))
 <br><br>
 
+
+<div id="youtube "></div>
+**------ Additional videos with our ai Rethink tools   ------**
+Visit our [Youtube Playlist] (https://youtube.com/playlist?list=PLAjiOfACyNOgg3p67E11CjLl-rq3zVndZ&si=gnQgVMdk1aGmL4c6)
+
+
 <div id="paperSection"></div>
 
 **------ PAPERS: AI Modeling Thought & Language ------**
 
 {% for publi in publist %}
-  {% if publi.research | contains(researchTag) %}
-  <pubtit>{{ publi.title }}</pubtit> by
-  {{ publi.authors }} -- <pubtit>{{ publi.type }}</pubtit> -- {{ publi.description }}
-  <br><a href="{{ publi.url }}">{{ publi.display }}</a>
+  {% if "aiThought" in publi.research or "aiEthicsC" in publi.research %}
+    <pubtit>{{ publi.title }}</pubtit> by
+    {{ publi.authors }} -- <pubtit>{{ publi.type }}</pubtit> -- {{ publi.description }}
+    <br><a href="{{ publi.url }}">{{ publi.display }}</a>
   {% endif %}
 {% endfor %}
