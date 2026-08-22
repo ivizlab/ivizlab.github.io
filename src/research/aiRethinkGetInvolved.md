@@ -178,7 +178,7 @@ permalink: /aiRethink/getinvolved/
 <div class="rethink-wrap">
 
 <div class="rt-hero-block">
-  <img class="rt-hero-img" src="/assets/images/res/airethink-hero.png">
+  <img class="rt-hero-img" src="/assets/images/res/airethink-top.png">
   <div class="rt-hero-text">
     <h1>AiRethink</h1>
     <p class="subtitle">A Community Answer to Corporate AI</p>
