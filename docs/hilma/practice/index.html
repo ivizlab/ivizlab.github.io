@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>iVizLab - Hilma AI</title>
+
+  <meta name="description" content="test :P">
+
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="canonical" href="https://ivizlab.github.io/hilma/practice/">
+</head>
+
+<body>
+
+  <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">iViz Lab : Simon Fraser Univ (SFU)</a>
+    </div>
+    <div class="collapse navbar-collapse" id="navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="/">Home</a></li>
+        <li><a href="/team">Team</a></li>
+        <li><a href="/research">Research</a></li>
+        <li><a href="/publications">Publications</a></li>
+        <li><a href="/allnews">News</a></li>
+        <li><a href="/media">About/Media</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+  <div class="container-fluid">
+    <div class="row">
+      <div id="textid" class="col-sm-12">
+  <style>
+  /* All rules scoped under .rethink-wrap so they never touch the rest of the site.
+     Font sizes below are fixed px on purpose (not rem) — rem inherits the site's
+     root html font-size, which can be much smaller than 16px, shrinking headers
+     relative to body text. Px keeps this section's type scale predictable. */
+  .rethink-wrap, .rethink-wrap *, .rethink-wrap *::before, .rethink-wrap *::after {
+    box-sizing: border-box;
+  }
+  .rethink-wrap {
+    max-width: 100%;
+    font-family: 'Georgia', serif;
+    font-size: 16px;
+    color: #1A2631;
+    line-height: 1.65;
+  }
+
+  .rethink-wrap img { max-width: 100%; height: auto; }
+  .rethink-wrap .rt-figure { display: block; max-width: 80%; margin: 0.75rem auto; }
+
+  .rt-hero {
+    background: #027D7A;
+    color: #fff;
+    padding: 2rem 1.5rem;
+    border-radius: 8px;
+    margin: 0.5rem 0 1.5rem;
+  }
+  .rt-hero-eyebrow { font-family: Arial, sans-serif; font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; color: #B2D8D6; margin-bottom: 0.5rem; }
+  .rt-hero h2 { font-family: Arial, sans-serif; font-size: clamp(26px, 6vw, 36px); font-weight: 800; line-height: 1.2; margin: 0 0 0.4rem; color: #fff; }
+  .rt-hero-sub { font-family: Arial, sans-serif; font-size: 17px; color: #D4EFED; font-style: italic; margin-bottom: 0.75rem; }
+  .rt-hero-meta { font-family: Arial, sans-serif; font-size: 14px; color: #A8D8D5; }
+
+  .rt-stats {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1px;
+    background: #B2D8D6;
+    border: 1px solid #B2D8D6;
+    border-radius: 6px;
+    overflow: hidden;
+    margin-bottom: 1.5rem;
+  }
+  .rt-stat {
+    flex: 1 1 45%;
+    min-width: 140px;
+    background: #E8F4F3;
+    padding: 0.9rem 0.8rem;
+    text-align: center;
+  }
+  .rt-stat-num {font-size: 26px; font-weight: 800; color: #027D7A; line-height: 1; margin-bottom: 0.25rem; }
+  .rt-stat-label { font-family: Arial, sans-serif; font-size: 13px; color: #3D5263; line-height: 1.3; }
+
+  .rt-section { margin-bottom: 4rem; padding-top: 1.5rem; border-top: 1px solid #E4EEED; }
+  .rt-section:first-of-type { padding-top: 0; border-top: none; }
+  .rt-section-label {font-size: 13px; letter-spacing: 0.1em; text-transform: uppercase; color: #4A7C7A; margin-bottom: 0.3rem; }
+  .rt-section h2 { font-size: 30px; font-weight: 400; margin-bottom: 2rem; line-height: 1.25; color: #1A2631; }
+  .rt-section h3 { font-size: 19px; font-weight: 700; margin: 1rem 0 0.25rem; color: #1A2631; }
+  .rt-section .subtitle{font-size: 18px;}
+  .rt-section .large-text{ font-size: 22px; margin-bottom: 2rem}
+  .rt-section p{margin-bottom: 1.5rem}
+
+.rt-video-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  width: 100%;
+}
+
+.rt-video-grid .rt-full-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+  .rt-pull-quote { border-left: 4px solid #027D7A; padding: 0.5rem 0 0.5rem 1rem; margin: 1rem 0; font-style: italic; font-size: 18px; color: #4A7C7A; }
+
+  .rt-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1rem; margin-top: 0.75rem; }
+  .rt-card { border-radius: 8px; padding: 1.1rem 1.25rem; }
+  .rt-card.teal { background: #E8F4F3; }
+  .rt-card.rust { background: #F5EDE9; }
+  .rt-card-label { font-family: Arial, sans-serif; font-size: 12px; letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 0.2rem; }
+  .rt-card.teal .rt-card-label { color: #027D7A; }
+  .rt-card.rust .rt-card-label { color: #C05A3A; }
+  .rt-card-title { font-family: Arial, sans-serif; font-size: 21px; font-weight: 800; margin-bottom: 0.15rem; }
+  .rt-card-sub { font-family: Arial, sans-serif; font-size: 14px; font-style: italic; margin-bottom: 0.6rem; }
+  .rt-card.teal .rt-card-sub { color: #4A7C7A; }
+  .rt-card.rust .rt-card-sub { color: #C05A3A; }
+  .rt-card-body { font-size: 16px; line-height: 1.6; }
+  .rt-card-status { font-family: Arial, sans-serif; font-size: 14px; font-weight: 700; margin-top: 0.6rem; }
+  .rt-card.teal .rt-card-status { color: #027D7A; }
+  .rt-card.rust .rt-card-status { color: #C05A3A; }
+  .rt-card-target { font-family: Arial, sans-serif; font-size: 13px; font-style: italic; color: #3D5263; margin-top: 0.2rem; }
+
+  .rt-list { list-style: none; padding: 0; margin: 0.5rem 0; }
+  .rt-list li { padding: 0.5rem 0 0.5rem 1rem; position: relative; border-bottom: 1px solid #E4EEED; font-size: 16px; line-height: 1.55; }
+  .rt-list li:last-child { border-bottom: none; }
+  .rt-list li::before { content: ''; position: absolute; left: 0; top: 1rem; width: 5px; height: 5px; border-radius: 50%; background: #027D7A; }
+
+  .rt-cta { background: #1A2631; color: #fff; padding: 1.75rem 1.25rem; text-align: center; border-radius: 8px; margin-bottom: 1.5rem; }
+  .rt-cta-quote { font-style: italic; color: #A8D8D5; font-size: 17px; max-width: 520px; margin: 0 auto 1rem; line-height: 1.55; }
+  .rt-cta-btn { display: inline-block; background: #027D7A; color: #fff; font-family: Arial, sans-serif; font-size: 15px; font-weight: 700; padding: 0.65rem 1.4rem; border-radius: 4px; text-decoration: none; margin: 0.3rem; }
+  .rt-cta-btn.outline { background: transparent; border: 2px solid #B2D8D6; color: #B2D8D6; }
+
+  .rt-grid-container{display: grid; grid-template-columns:1fr 3fr;}
+  iframe{width: 100%; aspect-ratio:16/9;}
+  .rt-grid-half{display: grid; grid-template-columns:1fr 1fr;}
+
+  ul.rt-nav{ list-style-type: none; margin: 0; padding: 0; overflow: hidden; }
+  ul.rt-nav li {float: left; padding: 0px 30px 10px 0px;}
+  ul.rt-nav li a{color:black;}
+
+  .video-card.shorts {
+    flex: 0 0 200px;   
+
+    img {
+      aspect-ratio: 9 / 16;
+      object-fit: cover;
+      object-position: center;
+    }
+
+    .rt-full-card{
+      width: 100%;
+    }
+
+    .rt-full-card a{
+
+    }
+
+
+}
+
+</style>
+<div class="rethink-wrap">
+<img class="rt-hero-img" src="/assets/images/res/hilma-hero.png">
+<div class="rt-nav-wrapper">
+    <ul class="rt-nav">
+      <li><a href="/hilma/">Overview</a></li>
+      <li><a href="/hilma/practice"><b>In Practice</b></a></li>
+      <li><a href="/hilma/publications">Publications</a></li>
+      <li><a href="/hilma/getinvolved">Get Involved</a></li>
+    </ul>
+  </div>
+<div class="rt-section" style="padding-top:25px;">
+  <div class="video-carousel-container">
+    <button class="carousel-control-btn prev" onclick="scrollCarousel(-1)">&#10094;</button>
+    <div class="video-carousel" id="videoSlider">
+<p><div class="video-card shorts">
+<a href="https://www.youtube.com/shorts/G5PCbZVFk4I" target="_blank">
+<img src="https://img.youtube.com/vi/G5PCbZVFk4I/maxresdefault.jpg" alt="Face Dance">
+<p>Face Dance</p>
+</a>
+</div></p>
+<p><div class="video-card shorts">
+<a href="https://www.youtube.com/shorts/5FbCf4D0Vm4" target="_blank">
+<img src="https://img.youtube.com/vi/5FbCf4D0Vm4/maxresdefault.jpg" alt="Oragami Dancer">
+<p>Oragami Dancer</p>
+</a>
+</div></p>
+<p><div class="video-card shorts">
+<a href="https://www.youtube.com/shorts/l_5LWsrurp0" target="_blank">
+<img src="https://img.youtube.com/vi/l_5LWsrurp0/maxresdefault.jpg" alt="Imagine a Dancer">
+<p>Imagine a Dancer</p>
+</a>
+</div></p>
+<p><div class="video-card shorts">
+<a href="https://www.youtube.com/shorts/KDjaoNTxw1c" target="_blank">
+<img src="https://img.youtube.com/vi/KDjaoNTxw1c/maxresdefault.jpg" alt="Leaf Dancer">
+<p>Leaf Dancer</p>
+</a>
+</div></p>
+<p><div class="video-card shorts">
+<a href="https://www.youtube.com/shorts/k0X0MelY1rI" target="_blank">
+<img src="https://img.youtube.com/vi/k0X0MelY1rI/maxresdefault.jpg" alt="Sprial Dance">
+<p>Sprial Dance</p>
+</a>
+</div></p>
+<p></div>
+<button class="carousel-control-btn next" onclick="scrollCarousel(1)">❯</button></p>
+  </div>
+</div>
+<div class="rt-section" style="padding-top:50px;">
+  <iframe src="https://www.youtube.com/embed/0oftfWVBang?si=MXeocZsIpgmmUIW2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; web-share" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+</div>
+<div class="rt-section">
+<h3 style="margin-bottom: 1rem;"><b>Realtime interactive programmable genAI video</b></h3>
+  <p>With the Advanced Stream DIffusion based artist tool we built ( ivizDiff ) - we can use source images - and even use several and blend them. And prompts ( again many and wieght them) - and either live video or looped video files which we can control in realtime interactiveluy  with all our advanced paramaters to make a realtime video with full interactive control including as you see here mapping live music,  breath work, mic levels, hand gestures, and game controllers. We can also have several personally trained models LORAs on a users work or ideas. Here I am using my own original art work as image  inputs and a lora trained on my style ( my art work) - all with me controlling my face video. See other demos of inputs from a living tree, or physically based manipulation for realtime architecture ideation.</p>
+</div>
+<div class="rt-section rt-video-grid">
+ <div class="rt-full-card">
+      <a href="https://www.youtube.com/watch?v=41qYi01eTgQ" target="_blank">
+        <img src="https://img.youtube.com/vi/41qYi01eTgQ/mqdefault.jpg" alt="Live AI architecture ideation. our &#39;movemint&#39; stream diffusion system">
+        <p>Live AI architecture ideation. our &#39;movemint&#39; stream diffusion system</p>
+      </a>
+  </div>
+ <div class="rt-full-card">
+      <a href="https://www.youtube.com/watch?v=g4JiLBYm6SQ" target="_blank">
+        <img src="https://img.youtube.com/vi/g4JiLBYm6SQ/mqdefault.jpg" alt="Forest Dance - Dance Art Work">
+        <p>Forest Dance - Dance Art Work</p>
+      </a>
+  </div>
+ <div class="rt-full-card">
+      <a href="https://www.youtube.com/watch?v=M_f9puQ57-4" target="_blank">
+        <img src="https://img.youtube.com/vi/M_f9puQ57-4/mqdefault.jpg" alt="Breath controlled art work.">
+        <p>Breath controlled art work.</p>
+      </a>
+  </div>
+ <div class="rt-full-card">
+      <a href="https://www.youtube.com/watch?v=gqPsJSRI7Bo" target="_blank">
+        <img src="https://img.youtube.com/vi/gqPsJSRI7Bo/mqdefault.jpg" alt="ai Explorer 2">
+        <p>ai Explorer 2</p>
+      </a>
+  </div>
+ <div class="rt-full-card">
+      <a href="https://www.youtube.com/watch?v=Or19hx_7W-8" target="_blank">
+        <img src="https://img.youtube.com/vi/Or19hx_7W-8/mqdefault.jpg" alt="emotionAI - realtime streamdiffusion system for emotion based thearapy">
+        <p>emotionAI - realtime streamdiffusion system for emotion based thearapy</p>
+      </a>
+  </div>
+</div>
+<script>
+function scrollCarousel(direction) {
+  const slider = document.getElementById('videoSlider');
+  slider.scrollBy({ left: direction * 300, behavior: 'smooth' });
+}
+</script>
+</div>
+
+    </div>
+  </div>
+
+  <div id="footer" class="panel">
+  <div class="panel-footer">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-4">
+          &copy; 2024 iVizlab - - - - - - - - - - - - - - - - - - - - -
+          <p>We are part of the <a href="https://www.sfu.ca/siat.html">School of Interactive Art and Tech</a> at <a href="https://www.sfu.ca/">Simon Fraser University</a>.</p>
+          <p>Site made with <a href="https://www.11ty.dev">Eleventy</a>; <a href="/aboutwebsite.html">copy and modify.</a></p>
+        </div>
+        <div class="col-sm-4">
+          <a href="/media">Lab Pix and Media</a> - - - - - - - - - - - -<br>
+          Contact: <a href="/dipaola/">Steve DiPaola</a><br>
+          Simon Fraser University<br>
+          Surrey, BC, Canada V3T 0A3<br>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="/assets/js/bootstrap.min.js"></script>
+
+
+</body>
+</html>

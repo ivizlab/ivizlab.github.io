@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>iVizLab - Hilma AI</title>
+
+  <meta name="description" content="test :P">
+
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="canonical" href="https://ivizlab.github.io/hilmaOverview/">
+</head>
+
+<body>
+
+  <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">iViz Lab : Simon Fraser Univ (SFU)</a>
+    </div>
+    <div class="collapse navbar-collapse" id="navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="/">Home</a></li>
+        <li><a href="/team">Team</a></li>
+        <li><a href="/research">Research</a></li>
+        <li><a href="/publications">Publications</a></li>
+        <li><a href="/allnews">News</a></li>
+        <li><a href="/media">About/Media</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+  <div class="container-fluid">
+    <div class="row">
+      <div id="textid" class="col-sm-12">
+  <style>
+  /* All rules scoped under .rethink-wrap so they never touch the rest of the site.
+     Font sizes below are fixed px on purpose (not rem) — rem inherits the site's
+     root html font-size, which can be much smaller than 16px, shrinking headers
+     relative to body text. Px keeps this section's type scale predictable. */
+  .rethink-wrap, .rethink-wrap *, .rethink-wrap *::before, .rethink-wrap *::after {
+    box-sizing: border-box;
+  }
+  .rethink-wrap {
+    max-width: 100%;
+    font-family: 'Georgia', serif;
+    font-size: 16px;
+    color: #1A2631;
+    line-height: 1.65;
+  }
+
+  .rethink-wrap img { max-width: 100%; height: auto; }
+  .rethink-wrap .rt-figure { display: block; max-width: 80%; margin: 0.75rem auto; }
+
+  .rt-hero {
+    background: #027D7A;
+    color: #fff;
+    padding: 2rem 1.5rem;
+    border-radius: 8px;
+    margin: 0.5rem 0 1.5rem;
+  }
+  .rt-hero-eyebrow { font-family: Arial, sans-serif; font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; color: #B2D8D6; margin-bottom: 0.5rem; }
+  .rt-hero h2 { font-family: Arial, sans-serif; font-size: clamp(26px, 6vw, 36px); font-weight: 800; line-height: 1.2; margin: 0 0 0.4rem; color: #fff; }
+  .rt-hero-sub { font-family: Arial, sans-serif; font-size: 17px; color: #D4EFED; font-style: italic; margin-bottom: 0.75rem; }
+  .rt-hero-meta { font-family: Arial, sans-serif; font-size: 14px; color: #A8D8D5; }
+
+  .rt-stats {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1px;
+    background: #B2D8D6;
+    border: 1px solid #B2D8D6;
+    border-radius: 6px;
+    overflow: hidden;
+    margin-bottom: 1.5rem;
+  }
+  .rt-stat {
+    flex: 1 1 45%;
+    min-width: 140px;
+    background: #E8F4F3;
+    padding: 0.9rem 0.8rem;
+    text-align: center;
+  }
+  .rt-stat-num {font-size: 26px; font-weight: 800; color: #027D7A; line-height: 1; margin-bottom: 0.25rem; }
+  .rt-stat-label { font-family: Arial, sans-serif; font-size: 13px; color: #3D5263; line-height: 1.3; }
+
+  .rt-section { margin-bottom: 4rem; padding-top: 1.5rem; border-top: 1px solid #E4EEED; }
+  .rt-section:first-of-type { padding-top: 0; border-top: none; }
+  .rt-section-label {font-size: 13px; letter-spacing: 0.1em; text-transform: uppercase; color: #4A7C7A; margin-bottom: 0.3rem; }
+  .rt-section h2 { font-size: 30px; font-weight: 400; margin-bottom: 2rem; line-height: 1.25; color: #1A2631; }
+  .rt-section h3 { font-size: 19px; font-weight: 700; margin: 1rem 0 0.25rem; color: #1A2631; }
+  .rt-section .subtitle{font-size: 18px;}
+  .rt-section .large-text{ font-size: 22px; margin-bottom: 2rem}
+  .rt-section p{margin-bottom: 1.5rem}
+
+
+  .rt-pull-quote { border-left: 4px solid #027D7A; padding: 0.5rem 0 0.5rem 1rem; margin: 1rem 0; font-style: italic; font-size: 18px; color: #4A7C7A; }
+
+  .rt-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1rem; margin-top: 0.75rem; }
+  .rt-card { border-radius: 8px; padding: 1.1rem 1.25rem; }
+  .rt-card.teal { background: #E8F4F3; }
+  .rt-card.rust { background: #F5EDE9; }
+  .rt-card-label { font-family: Arial, sans-serif; font-size: 12px; letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 0.2rem; }
+  .rt-card.teal .rt-card-label { color: #027D7A; }
+  .rt-card.rust .rt-card-label { color: #C05A3A; }
+  .rt-card-title { font-family: Arial, sans-serif; font-size: 21px; font-weight: 800; margin-bottom: 0.15rem; }
+  .rt-card-sub { font-family: Arial, sans-serif; font-size: 14px; font-style: italic; margin-bottom: 0.6rem; }
+  .rt-card.teal .rt-card-sub { color: #4A7C7A; }
+  .rt-card.rust .rt-card-sub { color: #C05A3A; }
+  .rt-card-body { font-size: 16px; line-height: 1.6; }
+  .rt-card-status { font-family: Arial, sans-serif; font-size: 14px; font-weight: 700; margin-top: 0.6rem; }
+  .rt-card.teal .rt-card-status { color: #027D7A; }
+  .rt-card.rust .rt-card-status { color: #C05A3A; }
+  .rt-card-target { font-family: Arial, sans-serif; font-size: 13px; font-style: italic; color: #3D5263; margin-top: 0.2rem; }
+
+  .rt-list { list-style: none; padding: 0; margin: 0.5rem 0; }
+  .rt-list li { padding: 0.5rem 0 0.5rem 1rem; position: relative; border-bottom: 1px solid #E4EEED; font-size: 16px; line-height: 1.55; }
+  .rt-list li:last-child { border-bottom: none; }
+  .rt-list li::before { content: ''; position: absolute; left: 0; top: 1rem; width: 5px; height: 5px; border-radius: 50%; background: #027D7A; }
+
+  .rt-cta { background: #1A2631; color: #fff; padding: 1.75rem 1.25rem; text-align: center; border-radius: 8px; margin-bottom: 1.5rem; }
+  .rt-cta-quote { font-style: italic; color: #A8D8D5; font-size: 17px; max-width: 520px; margin: 0 auto 1rem; line-height: 1.55; }
+  .rt-cta-btn { display: inline-block; background: #027D7A; color: #fff; font-family: Arial, sans-serif; font-size: 15px; font-weight: 700; padding: 0.65rem 1.4rem; border-radius: 4px; text-decoration: none; margin: 0.3rem; }
+  .rt-cta-btn.outline { background: transparent; border: 2px solid #B2D8D6; color: #B2D8D6; }
+
+  .rt-grid-container{display: grid; grid-template-columns:1fr 3fr;}
+
+  ul.rt-nav{ list-style-type: none; margin: 0; padding: 0; overflow: hidden; }
+  ul.rt-nav li {float: left; padding: 0px 30px 10px 0px;}
+  ul.rt-nav li a{color:black;}
+
+  @media (max-width: 480px) {
+    .rt-stat { flex: 1 1 100%; }
+  }
+</style>
+<div class="rethink-wrap">
+<img class="rt-hero-img" src="/assets/images/res/hilma-hero.png">
+<div class="rt-nav-wrapper">
+    <ul class="rt-nav">
+      <li><a href="/hilmaOverview">Overview</a></li>
+      <li><a href="/hilmaInPractice">In Practice</a></li>
+      <li><a href="/publications">Publications</a></li>
+      <li><a href="/getinvolved">Get Involved</a></li>
+    </ul>
+  </div>
+<div class="rt-section">
+    <h1>Hilma</h1>
+    <p class="subtitle">The Creative Layer of the AI ReThink Project</p>
+</div>
+<p><strong><a href="#paperSection">See Related Papers</a> and Related Projects:</strong><br>
+<a href="/aiMeaning">Semantic Meaning &amp; Analysis</a>   <a href="/aiThought">AI Modeling Thought &amp; Language</a>   <a href="/virtualHumans">AI Affective Virtual Human</a><br>
+<a href="/xrAvatars">XR Avatars; Edu, Coaches, Health</a>   <a href="/bioBrainVR">Sensing Humans (Bio/Brain/Face/Movement/VR)</a><br></p>
+<p><b>Researchers:</b> Steve DiPaola, Vanessa Utz, Rafael Arias Gonzalez</br>
+<b>Funders:</b> SSHRC Insight Grant 2026–2030</p>
+<div class="rt-section">
+  <p class="large-text">A new visual generative model built from ethically sourced data, with culturally grounded captioning and a Creative Journey interface that puts artists in control. AI ReThink fundamentally reorients visual generative AI to protect and empower artists and cultural communities rather than displace them. </p>
+  <p>Artists have always pushed at the material boundaries of their craft,  from the move to oil paint, to the camera, to digital tools and generative code. Each shift was resisted, absorbed, and eventually became its own vocabulary in the hands of practitioners who took it seriously. We see AI the same way: not as a replacement for human creative labor, and not as something to adopt wholesale because it exists, but as a new medium whose material properties artists are still discovering. The question worth asking is not whether AI belongs in the studio, but on whose terms, with what materials, and toward what ends.</p>
+  <p>The problem with current visual AI models runs deep. They were trained on copyrighted and culturally sensitive works without  attribution or consent. Their captioning systems misidentify and flatten cultural, historical, and aesthetic distinctions in ways that are not  incidental but structural. Indigenous and non-Western artistic  traditions are especially harmed. And the dominant prompt-and-produce  model displaces artists from their own creative process rather than supporting it.</p>
+</div>
+<div class="rt-section">
+    <h2>Why a New Model, Not Just a New Interface</h2>
+    <p>Today's image models were trained on copyrighted and culturally  sensitive work taken without consent, captioned by systems that flatten  cultural and aesthetic distinctions, and tuned toward a pop-commercial  center of gravity. Every artist who uses them feels the pull: outputs  drift toward the same polished, Western, market-tested look. For an  artist trying to reach what is in their own head and heart, that gravity is hard to escape — the model keeps dragging the work back toward  everyone else's. Fixing this requires going below the interface, to the  data and the model itself. We are doing that across three objectives.</p>
+    <div class="rt-grid-container">
+        <p><b>An Ethically Sourced Dataset</b></p>
+        <p>A new visual generative model trained exclusively on pre-1932 public  domain artworks and design works — legally clean and fully documented,  with special emphasis on Canadian and Indigenous artistic traditions.  Every source, artist, and image will be publicly searchable. Provenance  is not an afterthought; it is a design requirement.</p>
+    </div>
+        <div class="rt-grid-container">
+        <p><b>Culturally Grounded Captioning</b></p>
+        <p>A semantic captioning and retraining system built with Indigenous  communities, Asian cultural experts, dance and movement practitioners,  designers, and other domain experts. The goal: captions that preserve  cultural specificity, art-historical knowledge, stylistic nuance, and  technical execution — instead of erasing them. We are actively seeking  faculty collaborators across traditions to help build this "Culture  Caption" framework.</p>
+    </div>
+        <div class="rt-grid-container">
+        <p><b>The Creative Journey Interface</b></p>
+        <p>Artists don't prompt in the real world; they journey. Hilma maps every  step of a creative session and makes that map visible and navigable:  move forward, return to an earlier branch, label, fork in a new  direction, and see the whole territory of your own creative process.  Session-specific personalization adapts the model to the artist's  emerging direction — toward their vision, not the market's.  Human-in-the-loop throughout, running locally, with the energy dashboard integrated so artists see the cost of every session.</p>
+    </div>
+</div>
+<div class="rt-section">
+  <h2>Everything we build rests on the same three commitments, in this order.</h2>
+  <p><b>01 · Ownership — Free, Local, Private, Unlimited</b></p>
+  <p>This is the base condition for everything else. Our systems run entirely on your own computer, on open models and open tools. No cloud,  no login, no API key, no subscription, no rate limit. Your prompts, your documents, and your creative work never leave your machine — which means there is nothing for a company to collect, mine, or monetize. AI you can actually own, on hardware you already have.</p>
+  <p><b>02 · Orchestration — Humans Conduct, AI Plays a Part</b></p>
+  <p>We are moving away from the "you prompt, AI produces" trap. Passive prompting leads to cognitive atrophy: the slow erosion of reasoning,  questioning, synthesis, and reflection. Real professional and creative  work is never one-shot — so our systems are built for active  orchestration. You decompose the problem, direct each step, verify the  output, then fork, reflect, and continue. You are the conductor; AI  executes a part. This human-in-the-loop philosophy shapes the interface  of both projects.</p>
+  <img src="/assets/images/res/hilma-img-01.png">
+  <p><b>03 · Sustainability — Energy You Can See and Manage</b></p>
+  <p>Running locally already cuts energy use to a fraction of cloud AI:  our measured 0.13 watt-hours per query, against an estimated 20–50  watt-hours for GPT-5. But we go further. Both tools include a real-time  energy dashboard, so the environmental cost of every prompt and every  session is visible as you work. Our published user studies show that  this visibility changes behavior — people query more deliberately when  they can see the cost.</p>
+</div>
+<div class="rt-section">
+  <h2>One half of a larger rethink</h2>
+  <p>The two projects share the foundation above but attack different layers  of the AI stack — and, to our knowledge, no one else is rebuilding both. Open infrastructure answers "how do you run AI without corporate  capture?" A new model answers "is what's inside the model ethical?" You need both.</p>
+  <div class="rt-grid">
+    <div class="rt-card teal">
+      <p class="rt-card-label">Project 1</p>
+      <p class="rt-card-title">U.ness (<a href="https://uness.org" target="_blank" rel="noopener noreferrer">uness.org</a>)</p>
+      <p class="rt-card-sub">The Knowledge Layer &mdash; LLM / Text AI</p>
+      <p class="rt-card-body">A fully open-source, locally-run AI system. Free, private, no cloud, no subscription. Runs on your Mac or PC. Designed for deliberate, human-led use.</p>
+      <p class="rt-card-status">Status: v4.0 deployed</p>
+      <p class="rt-card-target">Students &middot; educators &middot; non-profits &middot; Indigenous groups &middot; cultural institutions</p>
+    </div>
+    <div class="rt-card rust">
+      <p class="rt-card-label">Project 2</p>
+      <p class="rt-card-title">RethinkAI</p>
+      <p class="rt-card-sub">The Creative Layer &mdash; Visual / Image AI</p>
+      <p class="rt-card-body">A new visual generative model built from ethically sourced data, with culturally grounded captioning and a Creative Journey interface that puts artists in control.</p>
+      <p class="rt-card-status">Funding: Large 5 year SSHRC Insight Grant</p>
+      <p class="rt-card-target">Artists &middot; designers &middot; cultural institutions &middot; Indigenous communities</p>
+    </div>
+  </div>
+</div>
+<div id="paperSection"></div>
+<br>
+<p><strong>PAPERS: Hilma</strong>
+<br></p>
+<p><pubtit> Digital Overconsumption and Waste; A Closer Look at the Impacts of Generative AI</pubtit> by
+Utz V; DiPaola S – <pubtit>Conference</pubtit> – Ethical Considerations in Creative Applications of Computer Vision (EC3V) Workshop
+<br><a href="https://www.google.com/search?q=&#39; Digital Overconsumption and Waste; A Closer Look at the Impacts of Generative AI&#39; &#39; Conference on Computer Vision and Pattern Recognition (CVPR) 2023&#39;"> Conference on Computer Vision and Pattern Recognition (CVPR) 2023 (2023)</a></p>
+<p><pubtit> Climate Implications of Diffusion-based Generative Visual AI Systems and their Mass Adoption</pubtit> by
+Utz V; DiPaola S – <pubtit>Conference</pubtit> – 9 pages
+<br><a href="https://www.google.com/search?q=&#39; Climate Implications of Diffusion-based Generative Visual AI Systems and their Mass Adoption&#39; &#39; International Conference on Computational Creativity&#39;"> International Conference on Computational Creativity (2023)</a></p>
+<p><pubtit> Applying GenAI to the Conservation and Reconstruction of Chinese Paintings Challenges and Insights</pubtit> by
+Dai S , Hennessy K, DiPaola S. – <pubtit>Conference</pubtit> – 23 pages
+<br><a href="https://www.google.com/search?q=&#39; Applying GenAI to the Conservation and Reconstruction of Chinese Paintings Challenges and Insights&#39; &#39; Proceedings of Electronic Visualisation and the Arts, British Computer Society&#39;"> Proceedings of Electronic Visualisation and the Arts, British Computer Society (2025)</a></p>
+<p><pubtit> Designing a Wheel-based Assessment Tool to Measure Visual Aesthetic Emotions</pubtit> by
+Abukhodair N; Song M; DiPaola S – <pubtit>Journal</pubtit> – 23 pages
+<br><a href="https://www.google.com/search?q=&#39; Designing a Wheel-based Assessment Tool to Measure Visual Aesthetic Emotions&#39; &#39; Cognitive Systems Research&#39;"> Cognitive Systems Research (2023)</a></p>
+<p><pubtit> Lucid Loop; A Virtual Deep Learning Biofeedback System for Lucid Dreaming Practice</pubtit> by
+Kitson A; DiPaola S; Riecke B – <pubtit>Conference</pubtit> – Paper LBW1322. 6 pages
+<br><a href="https://www.google.com/search?q=&#39; Lucid Loop; A Virtual Deep Learning Biofeedback System for Lucid Dreaming Practice&#39; &#39; ACM CHI Conference on Human Factors in Computing Systems (CHI)&#39;"> ACM CHI Conference on Human Factors in Computing Systems (CHI) (2019)</a></p>
+<p><pubtit> Deep Learning for Classification of Peak Emotions within Virtual Reality Systems</pubtit> by
+Quesnel D; DiPaola S; Rieke B – <pubtit>Conference</pubtit> – pp. 6-11
+<br><a href="https://www.google.com/search?q=&#39; Deep Learning for Classification of Peak Emotions within Virtual Reality Systems&#39; &#39; Semantic Ambient Media Experiences (SAME); Artificial Intelligence MEETS Virtual and Augmented Worlds (AIVR) with SIGGRAPH Asia&#39;"> Semantic Ambient Media Experiences (SAME); Artificial Intelligence MEETS Virtual and Augmented Worlds (AIVR) with SIGGRAPH Asia (2018)</a></p>
+<p><pubtit> Engagement with artificial intelligence through natural interaction models</pubtit> by
+Feldman S; Yalcin ON; DiPaola S – <pubtit>Conference</pubtit> – British Computer Society. pp. 296-303
+<br><a href="https://www.google.com/search?q=&#39; Engagement with artificial intelligence through natural interaction models&#39; &#39; Electronic Visualisation and the Arts (EVA)&#39;"> Electronic Visualisation and the Arts (EVA) (2017)</a></p>
+<p><pubtit> Movement Awareness through Emotion Based Aesthetic Visualization</pubtit> by
+Salevati S; DiPaola S; Carlson K – <pubtit>Conference</pubtit> – British Computer Society. 8 pages. London
+<br><a href="https://www.google.com/search?q=&#39; Movement Awareness through Emotion Based Aesthetic Visualization&#39; &#39; Electronic Visualisation and the Arts (EVA)&#39;"> Electronic Visualisation and the Arts (EVA) (2016)</a></p>
+<p><pubtit> Touch of the Eye; Does Observation Reflect Haptic Metaphors in Art Drawing?</pubtit> by
+Choi S K; DiPaola S – <pubtit>Conference</pubtit> – pp. 579-588
+<br><a href="https://www.google.com/search?q=&#39; Touch of the Eye; Does Observation Reflect Haptic Metaphors in Art Drawing?&#39; &#39; ACM Conf on Human Factors in Computing Systems (CHI)&#39;"> ACM Conf on Human Factors in Computing Systems (CHI) (2015)</a></p>
+<p><pubtit> A Creative Artificial Intelligence System to Investigate User Experience; Affect; Emotion and Creativity</pubtit> by
+Salevati S; DiPaola S – <pubtit>Conference</pubtit> – British Computer Society. 8 pages. London
+<br><a href="https://www.google.com/search?q=&#39; A Creative Artificial Intelligence System to Investigate User Experience; Affect; Emotion and Creativity&#39; &#39; Electronic Visualisation and the Arts (EVA)&#39;"> Electronic Visualisation and the Arts (EVA) (2015)</a></p>
+<p><pubtit> Enhancing Viewer's Emotional Connections to The Traditional Art Creative Process Via an AI Interactive System</pubtit> by
+Salevati M; DiPaola S – <pubtit>Conference</pubtit> – British Computer Society. 8 pages. London
+<br><a href="https://www.google.com/search?q=&#39; Enhancing Viewers Emotional Connections to The Traditional Art Creative Process Via an AI Interactive System&#39; &#39; Electronic Visualisation and the Arts (EVA)&#39;"> Electronic Visualisation and the Arts (EVA) (2015)</a></p>
+<p><pubtit> Using a Contextual Focus Model for an Automatic Creativity Algorithm to Generate Art Work</pubtit> by
+DiPaola S – <pubtit>Journal</pubtit> – Special Issue; Bio Inspired Cognitive Architectures. Vol 41. pp. 212-219
+<br><a href="https://www.google.com/search?q=&#39; Using a Contextual Focus Model for an Automatic Creativity Algorithm to Generate Art Work&#39; &#39; Procedia Computer Science&#39;"> Procedia Computer Science (2014)</a></p>
+<p><pubtit> Face; Portrait; Mask - Using a Parameterized System to Explore Synthetic Face Space</pubtit> by
+DiPaola S – <pubtit>Book</pubtit> – Bowen. Keene. Ng. (Eds). pp. 213-227. Springer
+<br><a href="https://www.google.com/search?q=&#39; Face; Portrait; Mask - Using a Parameterized System to Explore Synthetic Face Space&#39; &#39; Book Chapter. Electronic Visualisation in Arts and Culture&#39;"> Book Chapter. Electronic Visualisation in Arts and Culture (2013)</a></p>
+<p><pubtit> The Role of Micronarrative in the Design and Experience of Digital Games</pubtit> by
+Bizzocchi  J; Nixon M; DiPaola S; Funk N – <pubtit>Conference</pubtit> – Atlanta. Georgia. pp. 161-197
+<br><a href="https://www.google.com/search?q=&#39; The Role of Micronarrative in the Design and Experience of Digital Games&#39; &#39; Digital Games Research Association Conference (DIGRA)&#39;"> Digital Games Research Association Conference (DIGRA) (2013)</a></p>
+<p><pubtit> How a Painter Paints; An Interdisciplinary Understanding of Embodied Creativity</pubtit> by
+Choi S K; DiPaola S – <pubtit>Conference</pubtit> – British Computer Society. pp. 127-134. London
+<br><a href="https://www.google.com/search?q=&#39; How a Painter Paints; An Interdisciplinary Understanding of Embodied Creativity&#39; &#39; Electronic Visualisation and the Arts (EVA)&#39;"> Electronic Visualisation and the Arts (EVA) (2013)</a></p>
+<p><pubtit> How Did Humans Become So Creative? A Computational Approach</pubtit> by
+Gabora L; DiPaola S – <pubtit>Conference</pubtit> – pp. 203-211
+<br><a href="https://www.google.com/search?q=&#39; How Did Humans Become So Creative? A Computational Approach&#39; &#39; International Conference on Computational Creativity (ICCC)&#39;"> International Conference on Computational Creativity (ICCC) (2012)</a></p>
+<p><pubtit> Exploring the Effect of Color Palette in Painterly Rendered Character Sequences</pubtit> by
+Seifi H; DiPaola S; Enns JT – <pubtit>Conference</pubtit> – pp. 89-97
+<br><a href="https://www.google.com/search?q=&#39; Exploring the Effect of Color Palette in Painterly Rendered Character Sequences&#39; &#39; International Symposium on Computational Aesthetics in Graphics; Visualization &amp; Imaging&#39;"> International Symposium on Computational Aesthetics in Graphics; Visualization &amp; Imaging (2012)</a></p>
+<p><pubtit> Formalizing an Interconnected Syntax For Picassos Creative Process In Producing Guernica</pubtit> by
+DiPaola S; Smith A – <pubtit>Conference</pubtit> – 6 pages
+<br><a href="https://www.google.com/search?q=&#39; Formalizing an Interconnected Syntax For Picassos Creative Process In Producing Guernica&#39; &#39; Conceptual Structure; Discourse and Language&#39;"> Conceptual Structure; Discourse and Language (2012)</a></p>
+<p><pubtit> The Tacit and the Trace; Towards Syntax Of The Creative Act</pubtit> by
+Choi S K; DiPaola S; Schiphorst T – <pubtit>Conference</pubtit> – 6 pages
+<br><a href="https://www.google.com/search?q=&#39; The Tacit and the Trace; Towards Syntax Of The Creative Act&#39; &#39; Conceptual Structure; Discourse and Language&#39;"> Conceptual Structure; Discourse and Language (2012)</a></p>
+<p><pubtit> Rembrandts Textural Agency;  A Shared Perspective in Visual Art and Science</pubtit> by
+DiPaola S; Riebe C; Enns JT – <pubtit>Journal</pubtit> – Vol 43. No 3. pp. 145-151
+<br><a href="https://www.google.com/search?q=&#39; Rembrandts Textural Agency;  A Shared Perspective in Visual Art and Science&#39; &#39; Leonardo&#39;"> Leonardo (2011)</a></p>
+<p><pubtit> Following the Masters; Viewer Gaze is Directed by Relative Detail in Painted Portraits</pubtit> by
+Riebe C; DiPaola S;  Enns JT – <pubtit>Journal</pubtit> – Vol 9. No 8. pp. 368-368 (abstract)
+<br><a href="https://www.google.com/search?q=&#39; Following the Masters; Viewer Gaze is Directed by Relative Detail in Painted Portraits&#39; &#39; Journal of Vision&#39;"> Journal of Vision (2009)</a></p>
+<p><pubtit> Incorporating Characteristics of Human Creativity into an Evolutionary Art Algorithm</pubtit> by
+DiPaola S; Gabora L – <pubtit>Journal</pubtit> – Vol 10. No 2. pp. 97-110
+<br><a href="https://www.google.com/search?q=&#39; Incorporating Characteristics of Human Creativity into an Evolutionary Art Algorithm&#39; &#39; Genetic Programming and Evolvable Machines Journal&#39;"> Genetic Programming and Evolvable Machines Journal (2009)</a></p>
+<p><pubtit> Following the masters; Viewer gaze is directed by relative detail in painted portraits</pubtit> by
+Riebe C; DiPaola S; Enns JT – <pubtit>Conference</pubtit> – 9th Annual Meeting.
+<br><a href="https://www.google.com/search?q=&#39; Following the masters; Viewer gaze is directed by relative detail in painted portraits&#39; &#39; Abstracts of the Vision Sciences Society&#39;"> Abstracts of the Vision Sciences Society (2009)</a></p>
+<p><pubtit> Quantifying artist's use of human vision constructs to influence viewer eye gaze</pubtit> by
+DiPaola S – <pubtit>Conference</pubtit> – 6 pages
+<br><a href="https://www.google.com/search?q=&#39; Quantifying artist?s use of human vision constructs to influence viewer eye gaze&#39; &#39; SPIE Human Vision and Imaging. Int. Society for Optical Engineering&#39;"> SPIE Human Vision and Imaging. Int. Society for Optical Engineering (2009)</a></p>
+<p><pubtit> Darwins Enduring Legacy</pubtit> by
+DiPaola S – <pubtit>Journal</pubtit> – Images of my research in computer model of evolution ? selected by the Nature editors to accompany this essay (invited - not peer reviewed). Vol 451. pp. 632-633
+<br><a href="https://www.google.com/search?q=&#39; Darwin?s Enduring Legacy&#39; &#39; The Journal Nature&#39;"> The Journal Nature (2008)</a></p>
+<p><pubtit> The Trace and the Gaze; Textural Agency in Rembrandt?s Late Portraiture from a Vision Science Perspective</pubtit> by
+DiPaola S – <pubtit>Conference</pubtit> – British Computer Society. 8 pages. London
+<br><a href="https://www.google.com/search?q=&#39; The Trace and the Gaze; Textural Agency in Rembrandt?s Late Portraiture from a Vision Science Perspective&#39; &#39; Electronic Visualisation and the Arts (EVA)&#39;"> Electronic Visualisation and the Arts (EVA) (2008)</a></p>
+<p><pubtit> Emotional Remapping of Music to Facial Animation</pubtit> by
+DiPaola S; Arya A – <pubtit>Conference</pubtit> – pp. 143-149
+<br><a href="https://www.google.com/search?q=&#39; Emotional Remapping of Music to Facial Animation&#39; &#39; ACM SIGGRAPH - Symposium on Videogames&#39;"> ACM SIGGRAPH - Symposium on Videogames (2006)</a></p>
+<p><pubtit> Evolving Portrait Painter Programs using Genetic Programming to Explore Computer Creativity</pubtit> by
+DiPaola S – <pubtit>Conference</pubtit> – 7 pages
+<br><a href="https://www.google.com/search?q=&#39; Evolving Portrait Painter Programs using Genetic Programming to Explore Computer Creativity&#39; &#39; International Digital Media and Arts Association (IDMA)&#39;"> International Digital Media and Arts Association (IDMA) (2006)</a></p>
+<p><pubtit> Simulating Face to Face Collaboration for Interactive Learning Systems</pubtit> by
+DiPaola S; Arya A; Chan J – <pubtit>Conference</pubtit> – 6 pages. Vancouver
+<br><a href="https://www.google.com/search?q=&#39; Simulating Face to Face Collaboration for Interactive Learning Systems&#39; &#39; E-Learn 2005&#39;"> E-Learn 2005 (2005)</a></p>
+<p><pubtit> Towards an Interactive Visualization of Game Design Patterns</pubtit> by
+Tolmie J; DiPaola S; Charles A – <pubtit>Conference</pubtit> – Vancouver
+<br><a href="https://www.google.com/search?q=&#39; Towards an Interactive Visualization of Game Design Patterns&#39; &#39; Digital Games Research Association&#39;"> Digital Games Research Association (2005)</a></p>
+<p><pubtit> Affective Communication Remapping in MusicFace System</pubtit> by
+DiPaola S; Arya A – <pubtit>Conference</pubtit> – British Computer Society. 8 pages. London
+<br><a href="https://www.google.com/search?q=&#39; Affective Communication Remapping in MusicFace System&#39; &#39; Electronic Visualisation and the Arts (EVA)&#39;"> Electronic Visualisation and the Arts (EVA) (2004)</a></p>
+<p><pubtit> Investigating Face Space</pubtit> by
+DiPaola S – <pubtit>Conference</pubtit> – pp. 207-207
+<br><a href="https://www.google.com/search?q=&#39; Investigating Face Space&#39; &#39; ACM SIGGRAPH - Conference Abstracts and Applications&#39;"> ACM SIGGRAPH - Conference Abstracts and Applications (2002)</a></p>
+
+</div>
+
+    </div>
+  </div>
+
+  <div id="footer" class="panel">
+  <div class="panel-footer">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-4">
+          &copy; 2024 iVizlab - - - - - - - - - - - - - - - - - - - - -
+          <p>We are part of the <a href="https://www.sfu.ca/siat.html">School of Interactive Art and Tech</a> at <a href="https://www.sfu.ca/">Simon Fraser University</a>.</p>
+          <p>Site made with <a href="https://www.11ty.dev">Eleventy</a>; <a href="/aboutwebsite.html">copy and modify.</a></p>
+        </div>
+        <div class="col-sm-4">
+          <a href="/media">Lab Pix and Media</a> - - - - - - - - - - - -<br>
+          Contact: <a href="/dipaola/">Steve DiPaola</a><br>
+          Simon Fraser University<br>
+          Surrey, BC, Canada V3T 0A3<br>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="/assets/js/bootstrap.min.js"></script>
+
+
+</body>
+</html>
